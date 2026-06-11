@@ -36,6 +36,7 @@ LOGS_DIR = BASE_DIR / "logs"
 SCREENSHOTS_DIR = BASE_DIR / "screenshots"
 PRODUCTS_URL_WITH_ML_ACTIVE_FILTER = "https://app.producteca.com/products?isArchived=false&salesChannel=2"
 PICTURE_DELETE_BUTTON_SELECTOR = 'div[class*="delete-button__pictureUploader"], div[class*="_delete-button_"]'
+DIMENSION_FALLBACK_VALUES = ["21", "35", "28", "1000"]
 REQUEST_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -562,27 +563,36 @@ def remove_variants_if_any(page: Page, logger: RunLogger) -> bool:
     logger.write("PRODUCTO: variantes eliminadas." if removed_any else "PRODUCTO: no hay variantes.")
     return removed_any
 
-def dimensions_are_zero(page: Page, logger: RunLogger) -> bool:
+def dimensions_are_complete(page: Page, logger: RunLogger) -> bool:
     try:
         text = page.locator("body").inner_text(timeout=5000).lower()
         pattern = r"(\d+)\s*cm\s*x\s*(\d+)\s*cm\s*x\s*(\d+)\s*cm\s*-\s*(\d+)\s*gr"
         matches = re.findall(pattern, text)
         if not matches:
-            logger.write("DIMENSIONES: no pude leer patrón exacto, asumo que no está en cero.")
+            logger.write("DIMENSIONES: no pude leer medidas completas, reviso fallback.")
             return False
-        return any([int(a), int(b), int(c), int(w)] == [0, 0, 0, 0] for a, b, c, w in matches)
+        return any(all(int(value) > 0 for value in match) for match in matches)
     except Exception:
+        return False
+
+def dimension_value_is_missing(value: str) -> bool:
+    normalized = value.strip().replace(",", ".")
+    if not normalized:
+        return True
+    try:
+        return float(normalized) <= 0
+    except ValueError:
         return False
 
 def complete_dimensions_if_zero(page: Page, logger: RunLogger) -> bool:
     logger.write("DIMENSIONES: chequeando...")
-    if not dimensions_are_zero(page, logger):
-        logger.write("DIMENSIONES: ya tiene medidas.")
+    if dimensions_are_complete(page, logger):
+        logger.write("DIMENSIONES: ya tiene medidas completas.")
         return True
 
     for attempt in range(2):
         try:
-            logger.write(f"DIMENSIONES: están en cero. Editando intento {attempt + 1}/2...")
+            logger.write(f"DIMENSIONES: incompletas o en cero. Editando intento {attempt + 1}/2...")
             edit_button = page.locator('a:has-text("Editar")').filter(has_text="Dimensiones").first
             edit_button.scroll_into_view_if_needed()
             wait_ms(page, 800, 250)
@@ -597,7 +607,20 @@ def complete_dimensions_if_zero(page: Page, logger: RunLogger) -> bool:
                 logger.write("DIMENSIONES: no encontré los 4 campos.")
                 continue
 
-            for i, value in enumerate(["21", "35", "28", "1000"]):
+            current_values = []
+            for i in range(4):
+                try:
+                    current_values.append(inputs.nth(i).input_value(timeout=1000).strip())
+                except Exception:
+                    current_values.append("")
+
+            needs_fallback = any(dimension_value_is_missing(value) for value in current_values)
+            if not needs_fallback:
+                logger.write("DIMENSIONES: los campos del modal ya tienen valores.")
+                return True
+
+            logger.write("DIMENSIONES: aplicando fallback 21 x 35 x 28 - 1000 gr.")
+            for i, value in enumerate(DIMENSION_FALLBACK_VALUES):
                 field = inputs.nth(i)
                 field.click(force=True)
                 wait_ms(page, 200, 50)
@@ -623,10 +646,10 @@ def complete_dimensions_if_zero(page: Page, logger: RunLogger) -> bool:
             save_changes(page, logger, "dimensiones")
             wait_ms(page, 1500, 500)
 
-            if not dimensions_are_zero(page, logger):
+            if dimensions_are_complete(page, logger):
                 logger.write("DIMENSIONES: verificadas y guardadas correctamente.")
                 return True
-            logger.write("DIMENSIONES: siguen en cero después de guardar.")
+            logger.write("DIMENSIONES: siguen incompletas después de guardar.")
         except Exception as e:
             logger.write(f"DIMENSIONES: error en intento {attempt + 1}: {e}")
 
