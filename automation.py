@@ -34,7 +34,8 @@ DOWNLOADS_DIR = BASE_DIR / "downloads"
 OUTPUT_DIR = BASE_DIR / "output"
 LOGS_DIR = BASE_DIR / "logs"
 SCREENSHOTS_DIR = BASE_DIR / "screenshots"
-PRODUCTS_URL_WITH_ML_ACTIVE_FILTER = "https://app.producteca.com/products?isArchived=false&salesChannel=2&channelStatus=2-Active"
+PRODUCTS_URL_WITH_ML_CHANNEL_FILTER = "https://app.producteca.com/products?isArchived=false&salesChannel=2"
+PRODUCTS_URL_WITH_ML_ACTIVE_FILTER = f"{PRODUCTS_URL_WITH_ML_CHANNEL_FILTER}&channelStatus=2-Active"
 PICTURE_DELETE_BUTTON_SELECTOR = 'div[class*="delete-button__pictureUploader"], div[class*="_delete-button_"]'
 DIMENSION_FALLBACK_VALUES = ["21", "35", "28", "1000"]
 REQUEST_HEADERS = {
@@ -68,6 +69,7 @@ class ProductCandidate:
     href: str
     list_text: str = ""
     exact_sku_match: bool = False
+    list_mercadolibre_link: str = ""
 
 LogCallback = Optional[Callable[[str], None]]
 ProgressCallback = Optional[Callable[[list[dict]], None]]
@@ -783,30 +785,40 @@ def get_filtered_product_candidates(page: Page, sku: str = "") -> list[ProductCa
             if not href or href in seen:
                 continue
             seen.add(href)
-            list_text = link.evaluate(
+            row_data = link.evaluate(
                 """
                 (el) => {
                   const directText = (el.innerText || '').trim();
                   const row = el.closest('tr, [role="row"], li, article');
-                  if (row && (row.innerText || '').trim()) return row.innerText.trim();
+                  const read = (container) => {
+                    const text = (container.innerText || '').trim();
+                    const mlLink = Array.from(container.querySelectorAll('a'))
+                      .map((anchor) => anchor.href || anchor.getAttribute('href') || '')
+                      .find((href) => href.toLowerCase().includes('mercadolibre')) || '';
+                    return { text, mlLink };
+                  };
+                  if (row && (row.innerText || '').trim()) return read(row);
 
                   let current = el.parentElement;
                   for (let depth = 0; current && depth < 6; depth += 1, current = current.parentElement) {
                     const text = (current.innerText || '').trim();
-                    if (text && text.length > directText.length && text.length < 1000) return text;
+                    if (text && text.length > directText.length && text.length < 1000) return read(current);
                   }
-                  return directText;
+                  return { text: directText, mlLink: '' };
                 }
                 """
             )
+            list_text = (row_data or {}).get("text", "") if isinstance(row_data, dict) else str(row_data or "")
+            list_mercadolibre_link = (row_data or {}).get("mlLink", "") if isinstance(row_data, dict) else ""
             candidates.append(ProductCandidate(
                 href=href,
                 list_text=list_text or "",
                 exact_sku_match=text_has_exact_sku(list_text or "", sku),
+                list_mercadolibre_link=list_mercadolibre_link or "",
             ))
         except Exception:
             pass
-    candidates.sort(key=lambda item: not item.exact_sku_match)
+    candidates.sort(key=lambda item: (not item.exact_sku_match, not item.list_mercadolibre_link))
     return candidates
 
 def get_filtered_product_links(page: Page) -> list[str]:
@@ -962,10 +974,11 @@ def get_product_search_input(page: Page, timeout: int = 45000):
         f"URL actual: {page.url}. Último error: {last_error}"
     )
 
-def reapply_filter(page: Page, filter_text: str, logger: RunLogger) -> None:
-    logger.write("LISTA: aplicando filtro Mercado Libre activo...")
+def reapply_filter(page: Page, filter_text: str, logger: RunLogger, url: str = PRODUCTS_URL_WITH_ML_ACTIVE_FILTER) -> None:
+    filter_name = "Mercado Libre activo" if "channelStatus=2-Active" in url else "Mercado Libre"
+    logger.write(f"LISTA: aplicando filtro {filter_name}...")
     try:
-        page.goto(PRODUCTS_URL_WITH_ML_ACTIVE_FILTER, wait_until="commit", timeout=30000)
+        page.goto(url, wait_until="commit", timeout=30000)
     except Exception as e:
         logger.write(f"LISTA: navegación a productos no confirmó carga completa, sigo esperando buscador: {e}")
     search = get_product_search_input(page)
@@ -974,6 +987,23 @@ def reapply_filter(page: Page, filter_text: str, logger: RunLogger) -> None:
     search.fill(filter_text)
     search.press("Enter")
     wait_ms(page, 6000, 2000)
+
+def resolve_list_candidates(page: Page, sku: str, logger: RunLogger) -> list[ProductCandidate]:
+    reapply_filter(page, sku, logger, PRODUCTS_URL_WITH_ML_ACTIVE_FILTER)
+    candidates = get_filtered_product_candidates(page, sku)
+    exact_candidates = sum(1 for candidate in candidates if candidate.exact_sku_match)
+    row_ml_candidates = sum(1 for candidate in candidates if candidate.list_mercadolibre_link)
+    logger.write(f"LISTA: hrefs encontrados para SKU {sku} con filtro activo = {len(candidates)} (exactos: {exact_candidates}, con link ML en fila: {row_ml_candidates})")
+    if candidates:
+        return candidates
+
+    logger.write("LISTA: el filtro activo no devolvió resultados; reintento con canal Mercado Libre y filtro por link visible en fila.")
+    reapply_filter(page, sku, logger, PRODUCTS_URL_WITH_ML_CHANNEL_FILTER)
+    fallback_candidates = get_filtered_product_candidates(page, sku)
+    exact_fallback = sum(1 for candidate in fallback_candidates if candidate.exact_sku_match)
+    row_ml_fallback = [candidate for candidate in fallback_candidates if candidate.list_mercadolibre_link]
+    logger.write(f"LISTA: hrefs encontrados con filtro canal ML = {len(fallback_candidates)} (exactos: {exact_fallback}, con link ML en fila: {len(row_ml_fallback)})")
+    return row_ml_fallback
 
 def goto_product(page: Page, href: str, logger: RunLogger) -> None:
     url = f"https://app.producteca.com{href}"
@@ -1118,10 +1148,10 @@ def run_job(skus: list[str], log_callback: LogCallback = None, progress_callback
                 try:
                     logger.write("-" * 60)
                     logger.write(f"LISTA: resolviendo SKU {item.sku} ({i}/{len(statuses)})")
-                    reapply_filter(page, item.sku, logger)
-                    candidates = get_filtered_product_candidates(page, item.sku)
+                    candidates = resolve_list_candidates(page, item.sku, logger)
                     exact_candidates = sum(1 for candidate in candidates if candidate.exact_sku_match)
-                    logger.write(f"LISTA: hrefs encontrados para SKU {item.sku} = {len(candidates)} (exactos: {exact_candidates})")
+                    row_ml_candidates = sum(1 for candidate in candidates if candidate.list_mercadolibre_link)
+                    logger.write(f"LISTA: candidatos finales para SKU {item.sku} = {len(candidates)} (exactos: {exact_candidates}, con link ML en fila: {row_ml_candidates})")
                     if not candidates:
                         item.status = "No encontrado"
                         item.step = "Listado"
