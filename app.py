@@ -4,7 +4,7 @@ import os
 import pandas as pd
 import streamlit as st
 
-from automation import parse_skus, run_job, BASE_DIR, SESSION_FILE
+from automation import parse_skus, run_job, BASE_DIR, SESSION_FILE, load_session_from_env_if_needed
 
 st.set_page_config(page_title="Producteca Fotos", layout="wide")
 
@@ -33,13 +33,17 @@ def check_auth() -> bool:
 if not check_auth():
     st.stop()
 
+session_ok, session_message = load_session_from_env_if_needed()
+
 st.title("Producteca · Fotos")
 st.caption("Automatización de fotos con Producteca, Playwright e imágenes desde Kinderland.")
 
 with st.sidebar:
     st.subheader("Estado")
     st.write(f"Carpeta base: `{BASE_DIR}`")
-    st.write(f"session.json local: {'✅' if SESSION_FILE.exists() else '❌'}")
+    st.write(f"session.json local: {'✅' if session_ok and SESSION_FILE.exists() else '❌'}")
+    if not session_ok:
+        st.caption(session_message)
     st.write(f"HEADLESS env: `{os.getenv('HEADLESS', 'false')}`")
     st.divider()
     st.subheader("Uso")
