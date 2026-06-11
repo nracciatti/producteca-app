@@ -16,6 +16,7 @@ from playwright.sync_api import sync_playwright, Page
 
 BASE_DIR = Path(__file__).resolve().parent
 SESSION_FILE = BASE_DIR / "session.json"
+SESSION_CONTENT_KEYS = ("SESSION_JSON_CONTENT", "session_json_content")
 DOWNLOADS_DIR = BASE_DIR / "downloads"
 OUTPUT_DIR = BASE_DIR / "output"
 LOGS_DIR = BASE_DIR / "logs"
@@ -79,20 +80,39 @@ def parse_skus(raw_text: str) -> list[str]:
             result.append(sku)
     return result
 
+def _get_session_json_content() -> tuple[str, str]:
+    for key in SESSION_CONTENT_KEYS:
+        value = os.getenv(key, "").strip()
+        if value:
+            return value, key
+
+    try:
+        import streamlit as st
+
+        for key in SESSION_CONTENT_KEYS:
+            value = st.secrets.get(key, "")
+            if isinstance(value, str) and value.strip():
+                return value.strip(), f"st.secrets[{key}]"
+    except Exception:
+        pass
+
+    return "", ""
+
 def load_session_from_env_if_needed() -> tuple[bool, str]:
     if SESSION_FILE.exists():
         return True, f"session.json detectado en {SESSION_FILE}"
 
-    env_value = os.getenv("SESSION_JSON_CONTENT", "").strip()
+    env_value, source = _get_session_json_content()
     if not env_value:
-        return False, "No existe session.json y no se encontró SESSION_JSON_CONTENT"
+        keys = ", ".join(SESSION_CONTENT_KEYS)
+        return False, f"No existe session.json y no se encontró ninguna variable/secreto: {keys}"
 
     try:
         data = json.loads(env_value)
         SESSION_FILE.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
-        return True, "session.json creado desde SESSION_JSON_CONTENT"
+        return True, f"session.json creado desde {source}"
     except Exception as e:
-        return False, f"No se pudo crear session.json desde variable de entorno: {e}"
+        return False, f"No se pudo crear session.json desde {source}: {e}"
 
 def clear_temp_files() -> None:
     for folder in [DOWNLOADS_DIR, OUTPUT_DIR]:
