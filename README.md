@@ -10,6 +10,25 @@ python3 -m playwright install
 python3 -m streamlit run app.py
 ```
 
+## Uso simple desde terminal
+Si no querés usar Streamlit, podés trabajar con Notepad y terminal:
+
+1. editá `skus.txt`
+2. poné un SKU por línea
+3. corré:
+
+```bash
+python main.py
+```
+
+En Windows puede ser:
+
+```powershell
+py main.py
+```
+
+Este modo abre navegador visible y usa el mismo `session.json`.
+
 ## Autenticación
 Opcionalmente podés proteger la app con variables de entorno:
 
