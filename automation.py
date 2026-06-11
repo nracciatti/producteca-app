@@ -839,8 +839,9 @@ def get_mercadolibre_integration_text(page: Page) -> str:
         return page.evaluate(
             """
             () => {
+              const isMercadolibreTitle = (text) => /^mercado\\s*libre$/i.test(text) || /^mercadolibre$/i.test(text);
               const title = Array.from(document.querySelectorAll('*'))
-                .find(el => (el.innerText || '').trim() === 'Mercadolibre');
+                .find(el => isMercadolibreTitle((el.innerText || '').trim()));
               if (!title) return '';
 
               let current = title;
@@ -859,13 +860,13 @@ def get_mercadolibre_integration_text(page: Page) -> str:
 
 def mercadolibre_publication_is_active(page: Page) -> bool:
     integration_text = ""
-    for _ in range(4):
+    for _ in range(12):
         integration_text = get_mercadolibre_integration_text(page)
         if integration_text:
             active_match = re.search(r"\bActiva(?:s|os)?\s*:?\s*(\d+)", integration_text, re.IGNORECASE)
             if active_match:
                 return int(active_match.group(1)) > 0
-        wait_ms(page, 800, 200)
+        wait_ms(page, 1000, 250)
     return False
 
 def find_mercadolibre_product_href(page: Page, sku: str, hrefs: list[str] | list[ProductCandidate], logger: RunLogger) -> str:
@@ -882,13 +883,15 @@ def find_mercadolibre_product_href(page: Page, sku: str, hrefs: list[str] | list
         if suffix:
             logger.write(f"LISTA: candidato {idx}{suffix}.")
         goto_product(page, href, logger)
-        if not product_has_mercadolibre_link(page):
-            logger.write(f"LISTA: candidato descartado para SKU {sku}, sin link de Mercado Libre: {href}")
-            continue
         if mercadolibre_publication_is_active(page):
-            logger.write(f"LISTA: SKU {sku} asociado a Mercado Libre activo en {href}")
+            ml_link = get_mercadolibre_link(page, timeout=3000)
+            link_status = "con link" if ml_link else "sin link visible"
+            logger.write(f"LISTA: SKU {sku} asociado a Mercado Libre activo en {href} ({link_status})")
             return href
-        logger.write(f"LISTA: candidato descartado para SKU {sku}, Mercado Libre no figura activo: {href}")
+        if product_has_mercadolibre_link(page):
+            logger.write(f"LISTA: candidato descartado para SKU {sku}, tiene link de Mercado Libre pero no figura activo: {href}")
+        else:
+            logger.write(f"LISTA: candidato descartado para SKU {sku}, sin integración activa de Mercado Libre: {href}")
     raise RuntimeError(f"No se encontró un producto con Mercado Libre activo para el SKU {sku}. Candidatos revisados: {len(hrefs)}")
 
 def download_and_prepare(urls: list[str], logger: RunLogger) -> list[Path]:
