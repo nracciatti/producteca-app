@@ -114,6 +114,9 @@ def load_session_from_env_if_needed() -> tuple[bool, str]:
     except Exception as e:
         return False, f"No se pudo crear session.json desde {source}: {e}"
 
+def env_flag(name: str, default: str = "false") -> bool:
+    return os.getenv(name, default).strip().lower() in {"1", "true", "yes", "y", "on"}
+
 def clear_temp_files() -> None:
     for folder in [DOWNLOADS_DIR, OUTPUT_DIR]:
         for entry in folder.iterdir():
@@ -978,8 +981,9 @@ def run_job(skus: list[str], log_callback: LogCallback = None, progress_callback
     logger.write(f"SISTEMA: SKUs cargados = {len(skus)}")
     _notify(progress_callback, statuses)
 
-    if headless is None:
-        headless = os.getenv("HEADLESS", "false").lower() == "true"
+    force_headless = env_flag("HEADLESS")
+    if headless is None or force_headless:
+        headless = force_headless
 
     with sync_playwright() as p:
         logger.write(f"SISTEMA: abriendo navegador... headless={headless}")
