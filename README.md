@@ -10,25 +10,6 @@ python3 -m playwright install
 python3 -m streamlit run app.py
 ```
 
-## Uso simple desde terminal
-Si no querés usar Streamlit, podés trabajar con Notepad y terminal:
-
-1. editá `skus.txt`
-2. poné un SKU por línea
-3. corré:
-
-```bash
-python main.py
-```
-
-En Windows puede ser:
-
-```powershell
-py main.py
-```
-
-Este modo abre navegador visible y usa el mismo `session.json`.
-
 ## Autenticación
 Opcionalmente podés proteger la app con variables de entorno:
 
@@ -45,15 +26,7 @@ La app está preparada para Docker. En producción conviene:
 1. usar `HEADLESS=true`
 2. definir `APP_USERNAME` y `APP_PASSWORD`
 3. no subir `session.json` al repositorio
-4. cargar la sesión como variable/secreto `SESSION_JSON_CONTENT` con el contenido completo del JSON
-
-También se acepta `session_json_content` en minúsculas, útil si el panel de deploy o Streamlit Secrets ya quedó configurado con ese nombre.
-
-El valor tiene que ser el contenido completo de `session.json`, por ejemplo:
-
-```json
-{"cookies":[...],"origins":[...]}
-```
+4. cargar la sesión como variable `SESSION_JSON_CONTENT` con el contenido completo del JSON
 
 El contenedor expone Streamlit en el puerto `8501`.
 

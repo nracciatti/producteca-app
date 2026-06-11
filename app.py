@@ -4,13 +4,12 @@ import os
 import pandas as pd
 import streamlit as st
 
-from automation import parse_skus, run_job, BASE_DIR, SESSION_FILE, load_session_from_env_if_needed, env_flag
+from automation import parse_skus, run_job, BASE_DIR, SESSION_FILE
 
 st.set_page_config(page_title="Producteca Fotos", layout="wide")
 
 APP_USERNAME = os.getenv("APP_USERNAME", "").strip()
 APP_PASSWORD = os.getenv("APP_PASSWORD", "").strip()
-FORCE_HEADLESS = env_flag("HEADLESS")
 
 def check_auth() -> bool:
     if not APP_PASSWORD:
@@ -34,22 +33,18 @@ def check_auth() -> bool:
 if not check_auth():
     st.stop()
 
-session_ok, session_message = load_session_from_env_if_needed()
-
 st.title("Producteca · Fotos")
 st.caption("Automatización de fotos con Producteca, Playwright e imágenes desde Kinderland.")
 
 with st.sidebar:
     st.subheader("Estado")
     st.write(f"Carpeta base: `{BASE_DIR}`")
-    st.write(f"session.json local: {'✅' if session_ok and SESSION_FILE.exists() else '❌'}")
-    if not session_ok:
-        st.caption(session_message)
+    st.write(f"session.json local: {'✅' if SESSION_FILE.exists() else '❌'}")
     st.write(f"HEADLESS env: `{os.getenv('HEADLESS', 'false')}`")
     st.divider()
     st.subheader("Uso")
     st.write("1. Copiá `session.json`")
-    st.write("2. En deploy se usa Oculto")
+    st.write("2. Elegí Visible")
     st.write("3. Probá con 1 SKU")
 
 left, right = st.columns([2, 1])
@@ -57,12 +52,8 @@ with left:
     raw_skus = st.text_area("SKUs (uno por línea)", value="", height=220, placeholder="31660008\n314000420")
 with right:
     st.subheader("Opciones")
-    if FORCE_HEADLESS:
-        st.radio("Modo de navegador", options=["Oculto (headless)"], index=0, disabled=True)
-        headless = True
-    else:
-        execution_mode = st.radio("Modo de navegador", options=["Visible", "Oculto (headless)"], index=0)
-        headless = execution_mode == "Oculto (headless)"
+    execution_mode = st.radio("Modo de navegador", options=["Visible", "Oculto (headless)"], index=0)
+    headless = execution_mode == "Oculto (headless)"
     process = st.button("Procesar", type="primary", use_container_width=True)
     st.caption("Producteca se usa para operar el producto activo; las fotos se descargan desde Kinderland.")
 
