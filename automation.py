@@ -17,6 +17,18 @@ from playwright.sync_api import sync_playwright, Page
 BASE_DIR = Path(__file__).resolve().parent
 SESSION_FILE = BASE_DIR / "session.json"
 SESSION_CONTENT_KEYS = ("SESSION_JSON_CONTENT", "session_json_content")
+CHROMIUM_LOW_MEMORY_ARGS = [
+    "--disable-dev-shm-usage",
+    "--disable-gpu",
+    "--disable-extensions",
+    "--disable-background-networking",
+    "--disable-background-timer-throttling",
+    "--disable-renderer-backgrounding",
+    "--disable-site-isolation-trials",
+    "--disable-features=site-per-process",
+    "--no-sandbox",
+    "--single-process",
+]
 DOWNLOADS_DIR = BASE_DIR / "downloads"
 OUTPUT_DIR = BASE_DIR / "output"
 LOGS_DIR = BASE_DIR / "logs"
@@ -987,7 +999,7 @@ def run_job(skus: list[str], log_callback: LogCallback = None, progress_callback
 
     with sync_playwright() as p:
         logger.write(f"SISTEMA: abriendo navegador... headless={headless}")
-        browser = p.chromium.launch(headless=headless)
+        browser = p.chromium.launch(headless=headless, args=CHROMIUM_LOW_MEMORY_ARGS if headless else [])
         context = None
         try:
             context = browser.new_context(storage_state=str(SESSION_FILE))
