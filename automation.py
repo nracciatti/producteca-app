@@ -4,6 +4,7 @@ from dataclasses import dataclass, asdict
 from datetime import datetime
 from pathlib import Path
 from typing import Callable, Optional
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 import os
 import re
@@ -128,6 +129,12 @@ def load_session_from_env_if_needed() -> tuple[bool, str]:
 
 def env_flag(name: str, default: str = "false") -> bool:
     return os.getenv(name, default).strip().lower() in {"1", "true", "yes", "y", "on"}
+
+def fast_mode() -> bool:
+    return env_flag("PRODUCTECA_FAST", "false")
+
+def wait_ms(page: Page, normal_ms: int, fast_ms: int | None = None) -> None:
+    page.wait_for_timeout(fast_ms if fast_mode() and fast_ms is not None else normal_ms)
 
 def clear_temp_files() -> None:
     for folder in [DOWNLOADS_DIR, OUTPUT_DIR]:
@@ -493,9 +500,9 @@ def ensure_notes_if_empty(page: Page, description: str, logger: RunLogger) -> bo
 
         logger.write("NOTAS: vacío, copiando descripción de Kinderland.")
         notes.scroll_into_view_if_needed(timeout=5000)
-        page.wait_for_timeout(500)
+        wait_ms(page, 500, 100)
         notes.fill(description)
-        page.wait_for_timeout(500)
+        wait_ms(page, 500, 100)
         return True
     except Exception as e:
         logger.write(f"NOTAS: no se pudo completar: {e}")
@@ -508,7 +515,7 @@ def scroll_to_pictures(page: Page, logger: RunLogger) -> None:
     technical_section = get_picture_section(page)
     try:
         technical_section.scroll_into_view_if_needed(timeout=5000)
-        page.wait_for_timeout(900)
+        wait_ms(page, 900, 250)
         return
     except Exception:
         pass
@@ -519,16 +526,16 @@ def scroll_to_pictures(page: Page, logger: RunLogger) -> None:
             title = page.locator("h2, h3, span, div").filter(has_text=re.compile(r"^Fotos$")).first
             if title.count() > 0:
                 title.scroll_into_view_if_needed(timeout=5000)
-                page.wait_for_timeout(900)
+                wait_ms(page, 900, 250)
                 return
         except Exception:
             pass
         page.mouse.wheel(0, 900)
-        page.wait_for_timeout(500)
+        wait_ms(page, 500, 200)
 
     try:
         page.get_by_text("Fotos", exact=True).scroll_into_view_if_needed(timeout=5000)
-        page.wait_for_timeout(900)
+        wait_ms(page, 900, 250)
         return
     except Exception:
         pass
@@ -549,7 +556,7 @@ def remove_variants_if_any(page: Page, logger: RunLogger) -> bool:
                 break
             removed_any = True
             buttons.nth(total - 1).click(force=True)
-            page.wait_for_timeout(1000)
+            wait_ms(page, 1000, 300)
         except Exception:
             break
     logger.write("PRODUCTO: variantes eliminadas." if removed_any else "PRODUCTO: no hay variantes.")
@@ -578,9 +585,9 @@ def complete_dimensions_if_zero(page: Page, logger: RunLogger) -> bool:
             logger.write(f"DIMENSIONES: están en cero. Editando intento {attempt + 1}/2...")
             edit_button = page.locator('a:has-text("Editar")').filter(has_text="Dimensiones").first
             edit_button.scroll_into_view_if_needed()
-            page.wait_for_timeout(800)
+            wait_ms(page, 800, 250)
             edit_button.click(force=True)
-            page.wait_for_timeout(1800)
+            wait_ms(page, 1800, 700)
 
             modal = page.locator('div[role="dialog"]').last
             inputs = modal.locator("input")
@@ -593,28 +600,28 @@ def complete_dimensions_if_zero(page: Page, logger: RunLogger) -> bool:
             for i, value in enumerate(["21", "35", "28", "1000"]):
                 field = inputs.nth(i)
                 field.click(force=True)
-                page.wait_for_timeout(200)
+                wait_ms(page, 200, 50)
                 field.press("Control+A")
-                page.wait_for_timeout(100)
+                wait_ms(page, 100, 30)
                 field.press("Backspace")
-                page.wait_for_timeout(100)
+                wait_ms(page, 100, 30)
                 field.fill(value)
-                page.wait_for_timeout(250)
+                wait_ms(page, 250, 50)
                 field.press("Tab")
-                page.wait_for_timeout(250)
+                wait_ms(page, 250, 50)
 
             logger.write("DIMENSIONES: valores cargados.")
-            page.wait_for_timeout(1000)
+            wait_ms(page, 1000, 250)
             save_modal = page.locator('div[role="dialog"] button:has-text("Guardar cambios")').last
             save_modal.scroll_into_view_if_needed()
-            page.wait_for_timeout(300)
+            wait_ms(page, 300, 100)
             logger.write("DIMENSIONES: guardando modal...")
             save_modal.click(force=True)
-            page.wait_for_timeout(3500)
+            wait_ms(page, 3500, 1200)
 
             logger.write("DIMENSIONES: guardando producto después del modal...")
             save_changes(page, logger, "dimensiones")
-            page.wait_for_timeout(1500)
+            wait_ms(page, 1500, 500)
 
             if not dimensions_are_zero(page, logger):
                 logger.write("DIMENSIONES: verificadas y guardadas correctamente.")
@@ -643,7 +650,7 @@ def remove_current_pictures(page: Page, logger: RunLogger) -> None:
                     if current.count() == 0:
                         break
                     current.nth(0).click(force=True)
-                    page.wait_for_timeout(800)
+                    wait_ms(page, 800, 250)
                     total_removed += 1
                     clicked = True
                 except Exception:
@@ -663,14 +670,15 @@ def upload_pictures_one_by_one(page: Page, paths: list[Path], logger: RunLogger)
         logger.write(f"FOTOS: subiendo {i}/{len(paths)}")
         input_file.set_input_files(str(path))
         uploaded = False
-        for _ in range(20):
-            page.wait_for_timeout(700)
+        attempts = 12 if fast_mode() else 20
+        for _ in range(attempts):
+            wait_ms(page, 700, 250)
             after = count_current_pictures(page)
             if after > before:
                 uploaded = True
                 break
         if not uploaded:
-            page.wait_for_timeout(1200)
+            wait_ms(page, 1200, 500)
 
 def click_save_button(page: Page, logger: RunLogger) -> None:
     selectors = [
@@ -687,7 +695,7 @@ def click_save_button(page: Page, logger: RunLogger) -> None:
                 continue
             button.wait_for(state="visible", timeout=5000)
             button.scroll_into_view_if_needed(timeout=5000)
-            page.wait_for_timeout(300)
+            wait_ms(page, 300, 100)
             button.click(force=True, timeout=8000)
             return
         except Exception as e:
@@ -718,11 +726,11 @@ def save_changes(page: Page, logger: RunLogger, reason: str = "cambios") -> None
     try:
         page.wait_for_load_state("networkidle", timeout=10000)
     except Exception:
-        page.wait_for_timeout(3500)
+        wait_ms(page, 3500, 1500)
     logger.write(f"PRODUCTO: guardado OK ({reason}).")
 
 def get_filtered_product_links(page: Page) -> list[str]:
-    page.wait_for_timeout(5000)
+    wait_ms(page, 5000, 1500)
     links = page.locator('a[href^="/products/"]')
     total = links.count()
     hrefs = []
@@ -805,16 +813,28 @@ def find_mercadolibre_product_href(page: Page, sku: str, hrefs: list[str], logge
 
 def download_and_prepare(urls: list[str], logger: RunLogger) -> list[Path]:
     logger.write("FOTOS: descargando y convirtiendo imágenes...")
-    output_paths = []
-    for i, url in enumerate(urls, start=1):
+    def process_one(i: int, url: str) -> tuple[int, Path | None, str]:
         try:
             download_path = DOWNLOADS_DIR / f"img_{i:02d}.jpg"
             output_path = OUTPUT_DIR / f"img_{i:02d}.jpg"
             download_image(url, download_path)
             convert_to_1000(download_path, output_path)
-            output_paths.append(output_path.resolve())
+            return i, output_path.resolve(), ""
         except Exception as e:
-            logger.write(f"FOTOS: error procesando imagen {i}: {e}")
+            return i, None, str(e)
+
+    output_by_index: dict[int, Path] = {}
+    workers = min(4, max(1, len(urls)))
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = [executor.submit(process_one, i, url) for i, url in enumerate(urls, start=1)]
+        for future in as_completed(futures):
+            i, path, error = future.result()
+            if path:
+                output_by_index[i] = path
+            else:
+                logger.write(f"FOTOS: error procesando imagen {i}: {error}")
+
+    output_paths = [output_by_index[i] for i in sorted(output_by_index)]
     logger.write(f"FOTOS: listas para subir = {len(output_paths)}")
     return output_paths
 
@@ -867,10 +887,10 @@ def reapply_filter(page: Page, filter_text: str, logger: RunLogger) -> None:
         logger.write(f"LISTA: navegación a productos no confirmó carga completa, sigo esperando buscador: {e}")
     search = get_product_search_input(page)
     search.fill("")
-    page.wait_for_timeout(500)
+    wait_ms(page, 500, 100)
     search.fill(filter_text)
     search.press("Enter")
-    page.wait_for_timeout(6000)
+    wait_ms(page, 6000, 2000)
 
 def goto_product(page: Page, href: str, logger: RunLogger) -> None:
     url = f"https://app.producteca.com{href}"
@@ -880,7 +900,7 @@ def goto_product(page: Page, href: str, logger: RunLogger) -> None:
         logger.write(f"PRODUCTO: navegación no confirmó domcontentloaded, sigo si la página responde: {e}")
         if page.is_closed():
             raise
-    page.wait_for_timeout(2500)
+    wait_ms(page, 2500, 800)
     try:
         page.locator('a[href*="mercadolibre"], input, button').first.wait_for(state="attached", timeout=10000)
     except Exception as e:
@@ -949,11 +969,11 @@ def process_photos(page: Page, item: ProductStatus, logger: RunLogger) -> tuple[
             return False, ""
 
         page.bring_to_front()
-        page.wait_for_timeout(1500)
+        wait_ms(page, 1500, 300)
         had_variants = remove_variants_if_any(page, logger)
         if had_variants:
             save_changes(page, logger, "variantes")
-            page.wait_for_timeout(2500)
+            wait_ms(page, 2500, 800)
 
         if not complete_dimensions_if_zero(page, logger):
             item.status = "Error"

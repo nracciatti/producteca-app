@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 from automation import BASE_DIR, parse_skus, run_job
@@ -8,6 +9,8 @@ SKUS_FILE = BASE_DIR / "skus.txt"
 
 
 def main() -> None:
+    os.environ.setdefault("PRODUCTECA_FAST", "1")
+
     if not SKUS_FILE.exists():
         SKUS_FILE.write_text("31660008\n", encoding="utf-8")
         print(f"Se creó {SKUS_FILE}. Editalo con un SKU por línea y volvé a ejecutar.")
