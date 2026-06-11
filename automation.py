@@ -34,7 +34,7 @@ DOWNLOADS_DIR = BASE_DIR / "downloads"
 OUTPUT_DIR = BASE_DIR / "output"
 LOGS_DIR = BASE_DIR / "logs"
 SCREENSHOTS_DIR = BASE_DIR / "screenshots"
-PRODUCTS_URL_WITH_ML_ACTIVE_FILTER = "https://app.producteca.com/products?isArchived=false&salesChannel=2"
+PRODUCTS_URL_WITH_ML_ACTIVE_FILTER = "https://app.producteca.com/products?isArchived=false&salesChannel=2&channelStatus=2-Active"
 PICTURE_DELETE_BUTTON_SELECTOR = 'div[class*="delete-button__pictureUploader"], div[class*="_delete-button_"]'
 DIMENSION_FALLBACK_VALUES = ["21", "35", "28", "1000"]
 REQUEST_HEADERS = {
