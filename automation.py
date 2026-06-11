@@ -63,6 +63,12 @@ class ProductStatus:
     screenshot: str = ""
     product_name: str = ""
 
+@dataclass
+class ProductCandidate:
+    href: str
+    list_text: str = ""
+    exact_sku_match: bool = False
+
 LogCallback = Optional[Callable[[str], None]]
 ProgressCallback = Optional[Callable[[list[dict]], None]]
 
@@ -752,21 +758,59 @@ def save_changes(page: Page, logger: RunLogger, reason: str = "cambios") -> None
         wait_ms(page, 3500, 1500)
     logger.write(f"PRODUCTO: guardado OK ({reason}).")
 
-def get_filtered_product_links(page: Page) -> list[str]:
+def text_has_exact_sku(text: str, sku: str) -> bool:
+    if not sku:
+        return False
+    pattern = rf"(?<![A-Za-z0-9]){re.escape(str(sku).strip())}(?![A-Za-z0-9])"
+    return bool(re.search(pattern, text or "", re.IGNORECASE))
+
+def normalize_product_href(href: str) -> str:
+    clean = (href or "").split("?", 1)[0].split("#", 1)[0].rstrip("/")
+    if clean.startswith("https://app.producteca.com"):
+        clean = clean.replace("https://app.producteca.com", "", 1)
+    return clean
+
+def get_filtered_product_candidates(page: Page, sku: str = "") -> list[ProductCandidate]:
     wait_ms(page, 5000, 1500)
     links = page.locator('a[href^="/products/"]')
     total = links.count()
-    hrefs = []
+    candidates = []
     seen = set()
     for i in range(total):
         try:
-            href = links.nth(i).get_attribute("href")
-            if href and href not in seen:
-                seen.add(href)
-                hrefs.append(href)
+            link = links.nth(i)
+            href = normalize_product_href(link.get_attribute("href") or "")
+            if not href or href in seen:
+                continue
+            seen.add(href)
+            list_text = link.evaluate(
+                """
+                (el) => {
+                  const directText = (el.innerText || '').trim();
+                  const row = el.closest('tr, [role="row"], li, article');
+                  if (row && (row.innerText || '').trim()) return row.innerText.trim();
+
+                  let current = el.parentElement;
+                  for (let depth = 0; current && depth < 6; depth += 1, current = current.parentElement) {
+                    const text = (current.innerText || '').trim();
+                    if (text && text.length > directText.length && text.length < 1000) return text;
+                  }
+                  return directText;
+                }
+                """
+            )
+            candidates.append(ProductCandidate(
+                href=href,
+                list_text=list_text or "",
+                exact_sku_match=text_has_exact_sku(list_text or "", sku),
+            ))
         except Exception:
             pass
-    return hrefs
+    candidates.sort(key=lambda item: not item.exact_sku_match)
+    return candidates
+
+def get_filtered_product_links(page: Page) -> list[str]:
+    return [candidate.href for candidate in get_filtered_product_candidates(page)]
 
 def product_has_mercadolibre_link(page: Page) -> bool:
     return get_mercadolibre_link(page, timeout=7000) is not None
@@ -814,16 +858,29 @@ def get_mercadolibre_integration_text(page: Page) -> str:
         return ""
 
 def mercadolibre_publication_is_active(page: Page) -> bool:
-    integration_text = get_mercadolibre_integration_text(page)
-    if not integration_text:
-        return False
-    active_match = re.search(r"\bActiva:\s*(\d+)", integration_text, re.IGNORECASE)
-    return bool(active_match and int(active_match.group(1)) > 0)
+    integration_text = ""
+    for _ in range(4):
+        integration_text = get_mercadolibre_integration_text(page)
+        if integration_text:
+            active_match = re.search(r"\bActiva(?:s|os)?\s*:?\s*(\d+)", integration_text, re.IGNORECASE)
+            if active_match:
+                return int(active_match.group(1)) > 0
+        wait_ms(page, 800, 200)
+    return False
 
-def find_mercadolibre_product_href(page: Page, sku: str, hrefs: list[str], logger: RunLogger) -> str:
-    logger.write(f'LISTA: validando producto correcto para SKU {sku} entre {len(hrefs)} candidato(s)...')
-    for idx, href in enumerate(hrefs, start=1):
+def find_mercadolibre_product_href(page: Page, sku: str, hrefs: list[str] | list[ProductCandidate], logger: RunLogger) -> str:
+    candidates = [
+        href if isinstance(href, ProductCandidate) else ProductCandidate(href=href)
+        for href in hrefs
+    ]
+    exact_candidates = sum(1 for candidate in candidates if candidate.exact_sku_match)
+    logger.write(f'LISTA: validando producto correcto para SKU {sku} entre {len(candidates)} candidato(s). Coincidencias exactas en lista: {exact_candidates}')
+    for idx, candidate in enumerate(candidates, start=1):
+        href = candidate.href
+        suffix = " con SKU exacto en lista" if candidate.exact_sku_match else ""
         logger.write(f"LISTA: revisando candidato {idx}/{len(hrefs)} para SKU {sku}: {href}")
+        if suffix:
+            logger.write(f"LISTA: candidato {idx}{suffix}.")
         goto_product(page, href, logger)
         if not product_has_mercadolibre_link(page):
             logger.write(f"LISTA: candidato descartado para SKU {sku}, sin link de Mercado Libre: {href}")
@@ -1059,9 +1116,10 @@ def run_job(skus: list[str], log_callback: LogCallback = None, progress_callback
                     logger.write("-" * 60)
                     logger.write(f"LISTA: resolviendo SKU {item.sku} ({i}/{len(statuses)})")
                     reapply_filter(page, item.sku, logger)
-                    hrefs = get_filtered_product_links(page)
-                    logger.write(f"LISTA: hrefs encontrados para SKU {item.sku} = {len(hrefs)}")
-                    if not hrefs:
+                    candidates = get_filtered_product_candidates(page, item.sku)
+                    exact_candidates = sum(1 for candidate in candidates if candidate.exact_sku_match)
+                    logger.write(f"LISTA: hrefs encontrados para SKU {item.sku} = {len(candidates)} (exactos: {exact_candidates})")
+                    if not candidates:
                         item.status = "No encontrado"
                         item.step = "Listado"
                         item.last_event = "No apareció en el listado filtrado"
@@ -1071,7 +1129,7 @@ def run_job(skus: list[str], log_callback: LogCallback = None, progress_callback
                         page = None
                         continue
 
-                    href = find_mercadolibre_product_href(page, item.sku, hrefs, logger)
+                    href = find_mercadolibre_product_href(page, item.sku, candidates, logger)
                     item.href = href
                     item.step = "Abriendo producto"
                     item.last_event = f"Abriendo producto Mercado Libre {i}/{len(statuses)}"
