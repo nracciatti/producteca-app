@@ -1,0 +1,378 @@
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/products/212221887", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/products/212221887"}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/constants.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/me.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/index-CjJ2ExGR.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-oijajeQI.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-react-yFnhUO3T.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-lodash-ParKjP9V.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-rxjs-BBS_yQMD.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-date-C3fnTpLd.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-redux-form-9REiFEbF.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-mui-BHwfTJx8.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-ui-kit-CrVSBvxD.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-bootstrap-DAi489IS.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/ScrollToTop-rq3MGJoz.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-react-CIqsy66d.css", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-ui-kit-BEXzoIHS.css", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-bootstrap-TI_LyW6Y.css", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/ScrollToTop-CGuVnZfL.css", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/index-CjJ2ExGR.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/constants.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/ScrollToTop-CGuVnZfL.css"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-ui-kit-BEXzoIHS.css"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/me.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-react-CIqsy66d.css"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-bootstrap-TI_LyW6Y.css"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-rxjs-BBS_yQMD.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-redux-form-9REiFEbF.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-date-C3fnTpLd.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-lodash-ParKjP9V.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-bootstrap-DAi489IS.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-mui-BHwfTJx8.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-react-yFnhUO3T.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-oijajeQI.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/ScrollToTop-rq3MGJoz.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-ui-kit-CrVSBvxD.js"}
+{"type": "request", "method": "GET", "url": "https://imagesproducteca.blob.core.windows.net/producteca/isologo-producteca.svg", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/oauth/users/me?", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/oauth/users/me/authorizations?", "post": null}
+{"type": "request", "method": "POST", "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003z878720882za20gzb78720882zd78720882&_p=1782311215184&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=8&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=1&tag_exp=115938466~115938469~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=0&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&en=page_view&_ss=1&epn.userId=252454&tfd=1870", "post": null}
+{"type": "request", "method": "POST", "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1581916405&t=pageview&_s=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&ul=es-419&dt=Producteca&sr=1280x720&vp=1280x720&_u=YADAAEABAAAAACAAI~&jid=45784867&gjid=1816443215&cid=1540150890.1779810951&uid=252454&tid=UA-148361904-1&_gid=213972425.1782311216&_r=1&_slc=1&gtm=45He66h0n815CGT3MSv78720882za200zd78720882&cd1=242718&cd2=Producteca&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118395334~119027224~119392696~119392704&z=1846362006", "post": null}
+{"type": "response", "status": 200, "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1581916405&t=pageview&_s=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&ul=es-419&dt=Producteca&sr=1280x720&vp=1280x720&_u=YADAAEABAAAAACAAI~&jid=45784867&gjid=1816443215&cid=1540150890.1779810951&uid=252454&tid=UA-148361904-1&_gid=213972425.1782311216&_r=1&_slc=1&gtm=45He66h0n815CGT3MSv78720882za200zd78720882&cd1=242718&cd2=Producteca&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118395334~119027224~119392696~119392704&z=1846362006"}
+{"type": "response", "status": 204, "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003z878720882za20gzb78720882zd78720882&_p=1782311215184&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=8&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=1&tag_exp=115938466~115938469~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=0&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&en=page_view&_ss=1&epn.userId=252454&tfd=1870"}
+{"type": "request", "method": "POST", "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-14YP81JSLG&gtm=45je66h0v9123110549za20g&_p=1782311215184&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1540150890.1779810951&frm=0&ir=1&pscdl=noapi&rcb=14&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=1&tag_exp=115938466~115938468~119027224~119392696~119392704~119576876~119576880&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&uid=252454&sid=1782311215&sct=2&seg=0&_tu=wAQ&en=page_view&_ss=1&_ee=1&gap.uat=115938466~115938469~118395334~119027224~119392696~119392704&ep.ua_dimension_1=242718&ep.ua_dimension_2=Producteca&tfd=2094", "post": null}
+{"type": "response", "status": 204, "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-14YP81JSLG&gtm=45je66h0v9123110549za20g&_p=1782311215184&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1540150890.1779810951&frm=0&ir=1&pscdl=noapi&rcb=14&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=1&tag_exp=115938466~115938468~119027224~119392696~119392704~119576876~119576880&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&uid=252454&sid=1782311215&sct=2&seg=0&_tu=wAQ&en=page_view&_ss=1&_ee=1&gap.uat=115938466~115938469~118395334~119027224~119392696~119392704&ep.ua_dimension_1=242718&ep.ua_dimension_2=Producteca&tfd=2094"}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/auth/zendesk/chatjwt", "post": null}
+{"type": "request", "method": "POST", "url": "https://producteca.zendesk.com/frontendevents/pv?client=1B752747-577B-429A-A0E0-83861AF69088", "post": "{\"url\":\"https://app.producteca.com/products/212221887\",\"buid\":\"25863e920ae7457786fc2bd0dbe7ea45\",\"channel\":\"web_messenger\",\"version\":\"4c45de2\",\"timestamp\":\"2026-06-24T14:26:56.397Z\",\"suid\":\"cc80b102da8244fcb050da5413681ca0\",\"pageView\":{\"pageTitle\":\"Producteca\",\"referrer\":\"https://app.producteca.com/\",\"time\":47,\"loadTime\":637,\"navigatorLanguage\":\"es-419\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"helpCenterDedup\":false}}"}
+{"type": "request", "method": "GET", "url": "https://producteca.zendesk.com/embeddable/config", "post": null}
+{"type": "response", "status": 200, "url": "https://imagesproducteca.blob.core.windows.net/producteca/isologo-producteca.svg"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/cdn-cgi/rum?", "post": "{\"memory\":{\"totalJSHeapSize\":50253200,\"usedJSHeapSize\":36073780,\"jsHeapSizeLimit\":4294967296},\"resources\":[],\"referrer\":\"\",\"eventType\":1,\"firstPaint\":2380,\"firstContentfulPaint\":2380,\"startTime\":1782311213822.9,\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.5.0\",\"timings\":2},\"pageloadId\":\"31d38205-09de-46a8-a1bd-7c4ac62c59f4\",\"location\":\"https://app.producteca.com/products/212221887\",\"nt\":\"navigate\",\"timingsV2\":{\"nextHopProtocol\":\"h3\",\"domainLookupStart\":3.099999997764826,\"domainLookupEnd\":3.099999997764826,\"connectStart\":3.099999997764826,\"connectEnd\":3.099999997764826,\"requestStart\":3.199999999254942,\"responseStart\":1150,\"responseEnd\":1151.800000000745,\"domInteractive\":1644.8999999985099,\"domComplete\":2725.699999999255,\"loadEventStart\":2725.800000000745,\"loadEventEnd\":2725.89999999851,\"finalResponseHeadersStart\":1150,\"firstInterimResponseStart\":0,\"transferSize\":1698,\"decodedBodySize\":3258},\"dt\":\"\",\"siteToken\":\"62864954f7714177b5f5875722d4fbfc\",\"st\":2}"}
+{"type": "response", "status": 204, "url": "https://app.producteca.com/cdn-cgi/rum?"}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/favicon-B2TSxKoF.ico", "post": null}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/oauth/users/me/authorizations?"}
+{"type": "response", "status": 200, "url": "https://producteca.zendesk.com/embeddable/config"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/oauth/users/me?"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/notifications-api/api/notifications/latests?", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/notifications-api/api/jobs?status=in_process", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/api/products/212221887?", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/deals/api/deals?product=212221887&populate_campaign=true&keepOriginalEnabled=true&limit=999", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/deals/api/campaigns/opened?limit=999", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/bundles/api/bundles?productId=212221887", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/replicas/api/replicas?product=212221887", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/api/brands/?", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/api/categories/?", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/api/warehouses/?", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/api/pricelists/?", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/channels/api/channels?", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/meli/settings?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/212221887?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/channels/api/channels?", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/favicon-B2TSxKoF.ico"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/auth/zendesk/chatjwt"}
+{"type": "request", "method": "POST", "url": "https://producteca.zendesk.com/sc/sdk/v2/apps/65e60ca27bc90b3de25fcf3d/login", "post": "{\"client\":{\"platform\":\"web\",\"id\":\"25863e920ae7457786fc2bd0dbe7ea45\",\"integrationId\":\"65ef43ca07ed9d45b05aef56\",\"info\":{\"vendor\":\"zendesk\",\"sdkVersion\":\"0.1\",\"URL\":\"app.producteca.com\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"referrer\":\"\",\"browserLanguage\":\"es-419\",\"currentUrl\":\"https://app.producteca.com/products/212221887\",\"currentTitle\":\"Producteca\"}},\"userId\":\"252454\"}"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/api/warehouses/?"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/meli/settings?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/api/brands/?"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/212221887?app=2"}
+{"type": "response", "status": 200, "url": "https://producteca.zendesk.com/frontendevents/pv?client=1B752747-577B-429A-A0E0-83861AF69088"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/api/pricelists/?"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/api/products/212221887?"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/users/me?app=2", "post": null}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/deals/api/deals?product=212221887&populate_campaign=true&keepOriginalEnabled=true&limit=999"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/channels/api/channels?"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/notifications-api/api/jobs?status=in_process"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/bundles/api/bundles?productId=212221887"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/replicas/api/replicas?product=212221887"}
+{"type": "request", "method": "GET", "url": "https://http2.mlstatic.com/D_996151-MLA113468128013_062026-O.webp", "post": null}
+{"type": "request", "method": "GET", "url": "https://imagesproducteca.blob.core.windows.net/producteca/iso-mercadolibre.png", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_996151-MLA113468128013_062026-O.webp", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_957914-MLA112313105366_062026-O.jpg", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_796658-MLA113468246697_062026-O.jpg", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_924840-MLA113467476547_062026-O.webp", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_935735-MLA113467476549_062026-O.webp", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_752654-MLA113466286267_062026-O.jpg", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_819937-MLA112313580072_062026-O.jpg", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/meli/users/me?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/users/me?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/categories/MLA3422?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/212221887/catalogeligibility?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://imagesproducteca.blob.core.windows.net/producteca/img-not-available.gif", "post": null}
+{"type": "response", "status": 200, "url": "https://producteca.zendesk.com/sc/sdk/v2/apps/65e60ca27bc90b3de25fcf3d/login"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_935735-MLA113467476549_062026-O.webp"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/deals/api/campaigns/opened?limit=999"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_924840-MLA113467476547_062026-O.webp"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_957914-MLA112313105366_062026-O.jpg"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_752654-MLA113466286267_062026-O.jpg"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_996151-MLA113468128013_062026-O.webp"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_796658-MLA113468246697_062026-O.jpg"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_819937-MLA112313580072_062026-O.jpg"}
+{"type": "response", "status": 200, "url": "https://imagesproducteca.blob.core.windows.net/producteca/iso-mercadolibre.png"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/api/categories/?"}
+{"type": "response", "status": 200, "url": "https://http2.mlstatic.com/D_996151-MLA113468128013_062026-O.webp"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/channels/api/channels?"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/users/me?app=2"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-listing-search-http?", "post": "[{\"UserId\":128411524,\"ProductId\":212221887,\"App\":2,\"sent\":\"2026-06-24T14:26:57.606Z\"}]"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-product-search-http?", "post": "[{\"ResourceId\":212221887}]"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-deals-campaigns-search-http?", "post": "[{\"ProductId\":212221887}]"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/meli/users/me?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/categories/MLA3422?app=2"}
+{"type": "response", "status": 202, "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-listing-search-http?"}
+{"type": "response", "status": 202, "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-deals-campaigns-search-http?"}
+{"type": "response", "status": 202, "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-product-search-http?"}
+{"type": "response", "status": 200, "url": "https://imagesproducteca.blob.core.windows.net/producteca/img-not-available.gif"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/notifications-api/api/notifications/latests?"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/users/me?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/212221887/catalogeligibility?app=2"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/channels/api/productintegrations/2/products/212221887?app=2", "post": null}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/channels/api/productintegrations/2/products/212221887?app=2"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/catalog/dumps/domains/MLA/catalog_required?app=2", "post": null}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/catalog/dumps/domains/MLA/catalog_required?app=2"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/meli/size_charts?app=2&limit=999&offset=0", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/templates?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/channels/api/pictures/templates?channel=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/health/multi?ids=MLA1845602273&app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/picturecertifierstatus/multi?ids=MLA1845602273&app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/shippingcosts?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/212221887/availableshippingmodes?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/pcj-co-funded/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/3x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/9x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-paid-by-buyer/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-3/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-6/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_pcj-co-funded/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_3x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-3/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-6/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy//items?app=2&ids=MLA1845602273", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy//items?app=2&ids=MLA1845602273", "post": null}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/templates?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/meli/size_charts?app=2&limit=999&offset=0"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/shippingcosts?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/9x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/channels/api/pictures/templates?channel=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-3/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_3x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/picturecertifierstatus/multi?ids=MLA1845602273&app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/health/multi?ids=MLA1845602273&app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-3/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_pcj-co-funded/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-6/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-6/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-paid-by-buyer/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/pcj-co-funded/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy//items?app=2&ids=MLA1845602273"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/3x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/212221887/availableshippingmodes?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy//items?app=2&ids=MLA1845602273"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/reputation/user_products/MLAU4132002368/purchase_experience/integrators?app=2&locale=es_AR", "post": null}
+{"type": "request", "method": "POST", "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003z878720882za20gzb78720882zd78720882&_p=1782311215184&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=8&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=2&tag_exp=115938466~115938469~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=0&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&_tu=wAQ&en=url_load_time&epn.userId=252454&epn.url_load_time=2.73&ep.impersonated=false&epn.companyId=242718&ep.url=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&ep.url_path=%2Fproducts%2F212221887&_et=858&tfd=7731", "post": null}
+{"type": "response", "status": 204, "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003z878720882za20gzb78720882zd78720882&_p=1782311215184&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=8&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=2&tag_exp=115938466~115938469~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=0&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&_tu=wAQ&en=url_load_time&epn.userId=252454&epn.url_load_time=2.73&ep.impersonated=false&epn.companyId=242718&ep.url=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&ep.url_path=%2Fproducts%2F212221887&_et=858&tfd=7731"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/reputation/user_products/MLAU4132002368/purchase_experience/integrators?app=2&locale=es_AR"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy//users/128411524/shipping_preferences?app=2", "post": null}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy//users/128411524/shipping_preferences?app=2"}
+{"type": "request", "method": "POST", "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003za20gzb78720882zd78720882&_p=1782311215184&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=8&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=3&tag_exp=115938466~115938469~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&en=scroll&epn.userId=252454&epn.percent_scrolled=90&_et=14315&tfd=22048", "post": null}
+{"type": "response", "status": 204, "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003za20gzb78720882zd78720882&_p=1782311215184&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=8&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=3&tag_exp=115938466~115938469~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&en=scroll&epn.userId=252454&epn.percent_scrolled=90&_et=14315&tfd=22048"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/api/picture", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/api/picture"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/api/picture", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/api/picture"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/api/picture", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/api/picture"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/api/picture", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/api/picture"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/api/picture", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/api/picture"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/api/picture", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/api/picture"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/api/picture", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/api/picture"}
+{"type": "request", "method": "PUT", "url": "https://apps.producteca.com/api/products/212221887?", "post": "{\"integrations\":[{\"app\":2,\"integrationId\":\"212221887\",\"parentId\":null,\"permalink\":\"https://articulo.mercadolibre.com.ar/MLA-1845602273-banpresto-sanrio-fluffy-puffy-my-melody-kuromi-69599-_JM\",\"status\":\"Active\",\"listingType\":\"GoldSpecial\",\"safetyStock\":2,\"synchronizeStock\":true,\"useSafetyStockByVariation\":false,\"variations\":null,\"policyEnforcementStatus\":\"Compliant\",\"isActive\":true,\"isUnderReview\":false,\"isCompliant\":true,\"isReviewing\":false,\"isRestricted\":false,\"isActiveOrPaused\":true,\"isReadOnly\":false,\"id\":307649372}],\"originalIntegrations\":null,\"variations\":[{\"supplierCode\":null,\"stocks\":[{\"warehouseId\":453836,\"warehouse\":\"Suc. Castelar\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:29:54.217931\",\"available\":0},{\"warehouseId\":476840,\"warehouse\":\"Suc. Avellaneda\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:27:53.844087\",\"available\":0},{\"warehouseId\":476842,\"warehouse\":\"Suc. San Justo\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:23:44.495564\",\"available\":0},{\"warehouseId\":453839,\"warehouse\":\"Suc. Canning\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:23:46.057097\",\"available\":0},{\"warehouseId\":476841,\"warehouse\":\"Suc. Laferrere\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:23:49.705163\",\"available\":0},{\"warehouseId\":453840,\"warehouse\":\"Suc. Fco Alvarez\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:24:07.163801\",\"available\":0},{\"warehouseId\":476843,\"warehouse\":\"Suc. Soler\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:24:15.669673\",\"available\":0},{\"warehouseId\":453837,\"warehouse\":\"Suc. Parque Leloir\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:24:21.843035\",\"available\":0},{\"warehouseId\":476847,\"warehouse\":\"Suc. TOM\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:24:22.43144\",\"available\":0},{\"warehouseId\":476922,\"warehouse\":\"Piba\",\"quantity\":40,\"reserved\":0,\"lastModified\":\"2026-06-18T21:24:41.809544\",\"available\":40},{\"warehouseId\":476845,\"warehouse\":\"Suc. Atico\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:25:06.809715\",\"available\":0},{\"warehouseId\":460215,\"warehouse\":\"Suc. Hurlingham\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:26:29.746258\",\"available\":0},{\"warehouseId\":453838,\"warehouse\":\"Suc. Ramos Mejía\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:27:43.597402\",\"available\":0},{\"warehouseId\":453841,\"warehouse\":\"Suc. Lujan\",\"quantity\":0,\"reserved\":0,\"lastModified\":\"2026-06-18T21:27:50.759555\",\"available\":0},{\"warehouseId\":4...TRUNCATED"}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/products/212221887", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/products/212221887"}
+{"type": "request", "method": "POST", "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003za20gzb78720882zd78720882&_p=1782311215184&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=8&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=4&tag_exp=115938466~115938469~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&en=user_engagement&epn.userId=252454&_et=32029&tfd=49081", "post": null}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/cdn-cgi/rum?", "post": null}
+{"type": "request", "method": "POST", "url": "https://www.google.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003za20gzb78720882zd78720882&_p=1782311215184&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=8&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=4&tag_exp=115938466%7E115938469%7E119027224%7E119392696%7E119392704&uid=252454&sid=1782311215&sct=2&seg=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&en=user_engagement&epn.userId=252454&_et=32029&tfd=49081&gaf=1", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/constants.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/me.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/index-CjJ2ExGR.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-oijajeQI.js", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-oijajeQI.js"}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-react-yFnhUO3T.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-lodash-ParKjP9V.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-rxjs-BBS_yQMD.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-date-C3fnTpLd.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-redux-form-9REiFEbF.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-mui-BHwfTJx8.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-ui-kit-CrVSBvxD.js", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-ui-kit-CrVSBvxD.js"}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-bootstrap-DAi489IS.js", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/ScrollToTop-rq3MGJoz.js", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/ScrollToTop-rq3MGJoz.js"}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-react-CIqsy66d.css", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-ui-kit-BEXzoIHS.css", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/vendor-bootstrap-TI_LyW6Y.css", "post": null}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/ScrollToTop-CGuVnZfL.css", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/index-CjJ2ExGR.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-rxjs-BBS_yQMD.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-redux-form-9REiFEbF.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-react-CIqsy66d.css"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-date-C3fnTpLd.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-ui-kit-BEXzoIHS.css"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-bootstrap-TI_LyW6Y.css"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-lodash-ParKjP9V.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/ScrollToTop-CGuVnZfL.css"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-bootstrap-DAi489IS.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-mui-BHwfTJx8.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/vendor-react-yFnhUO3T.js"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/me.js"}
+{"type": "response", "status": 304, "url": "https://app.producteca.com/constants.js"}
+{"type": "request", "method": "GET", "url": "https://imagesproducteca.blob.core.windows.net/producteca/isologo-producteca.svg", "post": null}
+{"type": "response", "status": 200, "url": "https://imagesproducteca.blob.core.windows.net/producteca/isologo-producteca.svg"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/notifications-api/api/notifications/latests?", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/notifications-api/api/jobs?status=in_process", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/api/products/212221887?", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/deals/api/deals?product=212221887&populate_campaign=true&keepOriginalEnabled=true&limit=999", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/deals/api/campaigns/opened?limit=999", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/bundles/api/bundles?productId=212221887", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/replicas/api/replicas?product=212221887", "post": null}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/cdn-cgi/rum?", "post": "{\"memory\":{\"totalJSHeapSize\":73376486,\"usedJSHeapSize\":59397006,\"jsHeapSizeLimit\":4294967296},\"resources\":[],\"referrer\":\"\",\"eventType\":1,\"firstPaint\":0,\"firstContentfulPaint\":0,\"startTime\":1782311262697.2,\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.5.0\",\"timings\":2},\"pageloadId\":\"69085234-dc84-48e5-9265-5d79919c7d59\",\"location\":\"https://app.producteca.com/products/212221887\",\"nt\":\"reload\",\"timingsV2\":{\"nextHopProtocol\":\"h3\",\"domainLookupStart\":0.29999999701976776,\"domainLookupEnd\":0.29999999701976776,\"connectStart\":0.29999999701976776,\"connectEnd\":0.29999999701976776,\"requestStart\":0.5999999977648258,\"responseStart\":199.5,\"responseEnd\":202.79999999701977,\"domInteractive\":419.69999999925494,\"domComplete\":527,\"loadEventStart\":527.0999999977648,\"loadEventEnd\":527.0999999977648,\"finalResponseHeadersStart\":199.5,\"firstInterimResponseStart\":0,\"transferSize\":1698,\"decodedBodySize\":3258},\"dt\":\"\",\"siteToken\":\"62864954f7714177b5f5875722d4fbfc\",\"st\":2}"}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/assets/favicon-B2TSxKoF.ico", "post": null}
+{"type": "request", "method": "POST", "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=811798461&t=pageview&_s=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&ul=es-419&dt=Producteca&sr=1280x720&vp=1280x720&_u=QACAAEABAAAAACAAI~&jid=&gjid=&cid=1540150890.1779810951&uid=252454&tid=UA-148361904-1&_gid=213972425.1782311216&_slc=1&gtm=45He66h0n815CGT3MSv78720882za200zd78720882&cd1=242718&cd2=Producteca&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118395334~119027224~119392696~119392704&z=22761997", "post": null}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/assets/favicon-B2TSxKoF.ico"}
+{"type": "request", "method": "POST", "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003z878720882za20gzb78720882zd78720882&_p=1782311262915&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=16&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&tag_exp=115616986~115938466~115938469~118012009~118395335~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&_s=1&tfd=596", "post": "en=page_view&epn.userId=252454\r\nen=url_load_time&epn.userId=252454&epn.url_load_time=0.53&ep.impersonated=false&epn.companyId=242718&ep.url=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&ep.url_path=%2Fproducts%2F212221887"}
+{"type": "response", "status": 204, "url": "https://app.producteca.com/cdn-cgi/rum?"}
+{"type": "request", "method": "GET", "url": "https://app.producteca.com/auth/zendesk/chatjwt", "post": null}
+{"type": "request", "method": "POST", "url": "https://producteca.zendesk.com/frontendevents/pv?client=1B752747-577B-429A-A0E0-83861AF69088", "post": "{\"url\":\"https://app.producteca.com/products/212221887\",\"buid\":\"25863e920ae7457786fc2bd0dbe7ea45\",\"channel\":\"web_messenger\",\"version\":\"4c45de2\",\"timestamp\":\"2026-06-24T14:27:43.353Z\",\"suid\":\"cc80b102da8244fcb050da5413681ca0\",\"pageView\":{\"pageTitle\":\"Producteca\",\"referrer\":\"https://app.producteca.com/\",\"time\":24,\"loadTime\":66,\"navigatorLanguage\":\"es-419\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"helpCenterDedup\":false}}"}
+{"type": "request", "method": "GET", "url": "https://producteca.zendesk.com/embeddable/config", "post": null}
+{"type": "response", "status": 200, "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=811798461&t=pageview&_s=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&ul=es-419&dt=Producteca&sr=1280x720&vp=1280x720&_u=QACAAEABAAAAACAAI~&jid=&gjid=&cid=1540150890.1779810951&uid=252454&tid=UA-148361904-1&_gid=213972425.1782311216&_slc=1&gtm=45He66h0n815CGT3MSv78720882za200zd78720882&cd1=242718&cd2=Producteca&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118395334~119027224~119392696~119392704&z=22761997"}
+{"type": "response", "status": 204, "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003z878720882za20gzb78720882zd78720882&_p=1782311262915&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=16&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&tag_exp=115616986~115938466~115938469~118012009~118395335~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&_s=1&tfd=596"}
+{"type": "response", "status": 200, "url": "https://producteca.zendesk.com/embeddable/config"}
+{"type": "request", "method": "GET", "url": "https://producteca.zendesk.com/embeddable/config", "post": null}
+{"type": "response", "status": 200, "url": "https://producteca.zendesk.com/frontendevents/pv?client=1B752747-577B-429A-A0E0-83861AF69088"}
+{"type": "response", "status": 200, "url": "https://producteca.zendesk.com/embeddable/config"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/notifications-api/api/jobs?status=in_process"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/deals/api/deals?product=212221887&populate_campaign=true&keepOriginalEnabled=true&limit=999"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/deals/api/campaigns/opened?limit=999"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/api/products/212221887?"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-listing-search-http?", "post": "[{\"UserId\":128411524,\"ProductId\":212221887,\"App\":2,\"sent\":\"2026-06-24T14:27:43.677Z\"}]"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-product-search-http?", "post": "[{\"ResourceId\":212221887}]"}
+{"type": "request", "method": "POST", "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-deals-campaigns-search-http?", "post": "[{\"ProductId\":212221887}]"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/bundles/api/bundles?productId=212221887"}
+{"type": "request", "method": "GET", "url": "https://imagesproducteca.blob.core.windows.net/producteca/iso-mercadolibre.png", "post": null}
+{"type": "response", "status": 200, "url": "https://imagesproducteca.blob.core.windows.net/producteca/iso-mercadolibre.png"}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_996151-MLA113468128013_062026-O.webp", "post": null}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_996151-MLA113468128013_062026-O.webp"}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_819937-MLA112313580072_062026-O.jpg", "post": null}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_819937-MLA112313580072_062026-O.jpg"}
+{"type": "request", "method": "GET", "url": "https://http2.mlstatic.com/D_996151-MLA113468128013_062026-O.webp", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_957914-MLA112313105366_062026-O.jpg", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_796658-MLA113468246697_062026-O.jpg", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_924840-MLA113467476547_062026-O.webp", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_935735-MLA113467476549_062026-O.webp", "post": null}
+{"type": "request", "method": "GET", "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_752654-MLA113466286267_062026-O.jpg", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/categories/MLA3422?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/212221887/catalogeligibility?app=2", "post": null}
+{"type": "response", "status": 200, "url": "https://http2.mlstatic.com/D_996151-MLA113468128013_062026-O.webp"}
+{"type": "request", "method": "GET", "url": "https://imagesproducteca.blob.core.windows.net/producteca/img-not-available.gif", "post": null}
+{"type": "response", "status": 200, "url": "https://imagesproducteca.blob.core.windows.net/producteca/img-not-available.gif"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_957914-MLA112313105366_062026-O.jpg"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_796658-MLA113468246697_062026-O.jpg"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_924840-MLA113467476547_062026-O.webp"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_935735-MLA113467476549_062026-O.webp"}
+{"type": "response", "status": 200, "url": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_752654-MLA113466286267_062026-O.jpg"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/replicas/api/replicas?product=212221887"}
+{"type": "response", "status": 202, "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-listing-search-http?"}
+{"type": "response", "status": 202, "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-deals-campaigns-search-http?"}
+{"type": "response", "status": 202, "url": "https://app.producteca.com/mercadolibre-search-functions/api/meli-product-search-http?"}
+{"type": "response", "status": 200, "url": "https://app.producteca.com/auth/zendesk/chatjwt"}
+{"type": "request", "method": "POST", "url": "https://producteca.zendesk.com/sc/sdk/v2/apps/65e60ca27bc90b3de25fcf3d/login", "post": "{\"client\":{\"platform\":\"web\",\"id\":\"25863e920ae7457786fc2bd0dbe7ea45\",\"integrationId\":\"65ef43ca07ed9d45b05aef56\",\"info\":{\"vendor\":\"zendesk\",\"sdkVersion\":\"0.1\",\"URL\":\"app.producteca.com\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"referrer\":\"\",\"browserLanguage\":\"es-419\",\"currentUrl\":\"https://app.producteca.com/products/212221887\",\"currentTitle\":\"Producteca\"}},\"userId\":\"252454\",\"appUserId\":\"67bf31242c3b5681c2239171\"}"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/categories/MLA3422?app=2"}
+{"type": "response", "status": 200, "url": "https://producteca.zendesk.com/sc/sdk/v2/apps/65e60ca27bc90b3de25fcf3d/login"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/notifications-api/api/notifications/latests?"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/212221887/catalogeligibility?app=2"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/channels/api/productintegrations/2/products/212221887?app=2", "post": null}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/channels/api/productintegrations/2/products/212221887?app=2"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/meli/size_charts?app=2&limit=999&offset=0", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/channels/api/pictures/templates?channel=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/health/multi?ids=MLA1845602273&app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/picturecertifierstatus/multi?ids=MLA1845602273&app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/212221887/availableshippingmodes?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy//items?app=2&ids=MLA1845602273", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy//items?app=2&ids=MLA1845602273", "post": null}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/meli/size_charts?app=2&limit=999&offset=0"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/channels/api/pictures/templates?channel=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/picturecertifierstatus/multi?ids=MLA1845602273&app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy//items?app=2&ids=MLA1845602273"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/reputation/user_products/MLAU4132002368/purchase_experience/integrators?app=2&locale=es_AR", "post": null}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/health/multi?ids=MLA1845602273&app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/productlistingintegrations/212221887/availableshippingmodes?app=2"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy//items?app=2&ids=MLA1845602273"}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy/reputation/user_products/MLAU4132002368/purchase_experience/integrators?app=2&locale=es_AR"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2", "post": null}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2", "post": null}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_9x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/12x_campaign/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_cuota-simple-12/sellers/128411524?app=2"}
+{"type": "response", "status": 404, "url": "https://apps.producteca.com/mercadolibre-api/proxy/special_installments/mshops_12x_campaign/sellers/128411524?app=2"}
+{"type": "request", "method": "GET", "url": "https://apps.producteca.com/mercadolibre-api/proxy//users/128411524/shipping_preferences?app=2", "post": null}
+{"type": "response", "status": 200, "url": "https://apps.producteca.com/mercadolibre-api/proxy//users/128411524/shipping_preferences?app=2"}
+{"type": "request", "method": "POST", "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003za20gzb78720882zd78720882&_p=1782311262915&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=16&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=2&tag_exp=115616986~115938466~115938469~118012009~118395335~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&en=scroll&epn.userId=252454&epn.percent_scrolled=90&_et=16&tfd=5598", "post": null}
+{"type": "response", "status": 204, "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-GP17BD5WMY&gtm=45je66h0v895066003za20gzb78720882zd78720882&_p=1782311262915&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&are=1&cid=1540150890.1779810951&frm=0&pscdl=noapi&rcb=16&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=2&tag_exp=115616986~115938466~115938469~118012009~118395335~119027224~119392696~119392704&uid=252454&sid=1782311215&sct=2&seg=1&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&en=scroll&epn.userId=252454&epn.percent_scrolled=90&_et=16&tfd=5598"}
+{"type": "request", "method": "POST", "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-14YP81JSLG&gtm=45je66h0v9123110549za20g&_p=1782311262915&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1540150890.1779810951&frm=0&ir=1&pscdl=noapi&rcb=1&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=1&tag_exp=115616985~115938466~115938469~119027224~119392696~119392704~119534187~119576876~119576880&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&uid=252454&sid=1782311215&sct=2&seg=1&_tu=wAQ&en=page_view&_ee=1&gap.uat=115616985~115938466~115938468~118395334~119027224~119392696~119392704&ep.ua_dimension_1=242718&ep.ua_dimension_2=Producteca&tfd=5699", "post": null}
+{"type": "response", "status": 204, "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-14YP81JSLG&gtm=45je66h0v9123110549za20g&_p=1782311262915&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1540150890.1779810951&frm=0&ir=1&pscdl=noapi&rcb=1&sr=1280x720&uaa=arm&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.1&uaw=0&ul=es-419&_s=1&tag_exp=115616985~115938466~115938469~119027224~119392696~119392704~119534187~119576876~119576880&dl=https%3A%2F%2Fapp.producteca.com%2Fproducts%2F212221887&dt=Producteca&uid=252454&sid=1782311215&sct=2&seg=1&_tu=wAQ&en=page_view&_ee=1&gap.uat=115616985~115938466~115938468~118395334~119027224~119392696~119392704&ep.ua_dimension_1=242718&ep.ua_dimension_2=Producteca&tfd=5699"}

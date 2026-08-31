@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import os
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 
@@ -34,7 +36,7 @@ if not check_auth():
     st.stop()
 
 st.title("Producteca · Fotos")
-st.caption("Automatización de fotos con Producteca, Playwright e imágenes desde Kinderland.")
+st.caption("Automatización de fotos con Producteca, Playwright y las imágenes actuales del producto.")
 
 with st.sidebar:
     st.subheader("Estado")
@@ -46,16 +48,23 @@ with st.sidebar:
     st.write("1. Copiá `session.json`")
     st.write("2. Elegí Visible")
     st.write("3. Probá con 1 SKU")
+    st.write("4. Si el SKU se repite, se procesan todos los productos activos")
+    st.write("5. Para procesar uno solo, usá `SKU | parte del nombre`")
 
 left, right = st.columns([2, 1])
 with left:
-    raw_skus = st.text_area("SKUs (uno por línea)", value="", height=220, placeholder="31660008\n314000420")
+    raw_skus = st.text_area(
+        "SKUs (uno por línea)",
+        value="",
+        height=220,
+        placeholder="31660008\n317400028\n314000420 | Kuromi",
+    )
 with right:
     st.subheader("Opciones")
     execution_mode = st.radio("Modo de navegador", options=["Visible", "Oculto (headless)"], index=0)
     headless = execution_mode == "Oculto (headless)"
     process = st.button("Procesar", type="primary", use_container_width=True)
-    st.caption("Producteca se usa para operar el producto activo; las fotos se descargan desde Kinderland.")
+    st.caption("Producteca se usa para operar el producto activo; las fotos actuales se normalizan a 1000x1000.")
 
 metrics_placeholder = st.empty()
 progress_placeholder = st.empty()
@@ -75,29 +84,32 @@ if process:
         df = pd.DataFrame(items)
         if df.empty:
             return
-        done = df["status"].isin(["OK", "Error", "No encontrado"]).sum()
+        done = df["status"].isin(["OK", "Omitido", "Error", "No encontrado"]).sum()
         total = len(df)
         ok = (df["status"] == "OK").sum()
+        skipped = (df["status"] == "Omitido").sum()
         err = df["status"].isin(["Error", "No encontrado"]).sum()
-        c1, c2, c3, c4 = metrics_placeholder.columns(4)
+        c1, c2, c3, c4, c5 = metrics_placeholder.columns(5)
         c1.metric("Total", total)
         c2.metric("Procesados", int(done))
         c3.metric("OK", int(ok))
-        c4.metric("Error", int(err))
+        c4.metric("Omitidos", int(skipped))
+        c5.metric("Error", int(err))
         progress_placeholder.progress(done / total if total else 0.0, text=f"{done}/{total} procesados")
-        friendly = df[["index", "sku", "status", "step", "images_detected", "last_event", "error"]].copy()
-        friendly.columns = ["#", "SKU", "Estado", "Paso actual", "Imágenes", "Último evento", "Error"]
+        friendly = df[["index", "sku", "name_filter", "status", "step", "images_detected", "elapsed_seconds", "last_event", "error"]].copy()
+        friendly.columns = ["#", "SKU", "Filtro nombre", "Estado", "Paso actual", "Imágenes", "Segundos", "Último evento", "Error"]
         status_placeholder.dataframe(friendly, use_container_width=True, hide_index=True)
 
     with st.spinner("Ejecutando automatización..."):
         logs_placeholder.info("Los logs se guardan en archivo durante la ejecución para evitar bloquear el navegador.")
         result = run_job(skus, log_callback=None, progress_callback=progress_callback, headless=headless)
 
-    c1, c2, c3, c4 = result_placeholder.columns(4)
+    c1, c2, c3, c4, c5 = result_placeholder.columns(5)
     c1.metric("Total", result["total"])
     c2.metric("OK", result["ok"])
-    c3.metric("Error", result["error"])
-    c4.metric("Log", "Guardado")
+    c3.metric("Omitidos", result["skipped"])
+    c4.metric("Error", result["error"])
+    c5.metric("Log", "Guardado")
 
     result_df = pd.DataFrame(result["results"])
     if not result_df.empty:
@@ -105,6 +117,15 @@ if process:
         st.dataframe(result_df, use_container_width=True, hide_index=True)
         csv_bytes = result_df.to_csv(index=False).encode("utf-8")
         st.download_button("Descargar reporte CSV", data=csv_bytes, file_name="resultado_producteca.csv", mime="text/csv")
+
+    single_image_file = Path(result["single_image_skus_file"])
+    if single_image_file.exists():
+        st.download_button(
+            "Descargar SKUs con una sola imagen",
+            data=single_image_file.read_bytes(),
+            file_name=single_image_file.name,
+            mime="text/plain",
+        )
 
     try:
         with open(result["log_file"], "r", encoding="utf-8") as f:

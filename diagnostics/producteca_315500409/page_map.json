@@ -1,0 +1,1404 @@
+{
+  "url": "https://app.producteca.com/products/212221887",
+  "headings": [
+    {
+      "idx": 0,
+      "tag": "A",
+      "text": "",
+      "href": "https://app.producteca.com/salesorders?%24filter=%28status%20eq%20%27Opened%27%29",
+      "rect": {
+        "x": 0,
+        "y": -0.75,
+        "w": 167,
+        "h": 40
+      }
+    },
+    {
+      "idx": 2,
+      "tag": "A",
+      "text": "Ventas",
+      "href": "https://app.producteca.com/salesorders?$filter=(status%20eq%20%27Opened%27)",
+      "rect": {
+        "x": 199,
+        "y": -1,
+        "w": 54.640625,
+        "h": 45
+      }
+    },
+    {
+      "idx": 3,
+      "tag": "A",
+      "text": "Productos",
+      "href": "https://app.producteca.com/products",
+      "rect": {
+        "x": 277.640625,
+        "y": -1,
+        "w": 80.25,
+        "h": 45
+      }
+    },
+    {
+      "idx": 4,
+      "tag": "A",
+      "text": "Centro de monitoreo",
+      "href": "https://app.producteca.com/monitoring-center",
+      "rect": {
+        "x": 381.890625,
+        "y": -1,
+        "w": 152.625,
+        "h": 45
+      }
+    },
+    {
+      "idx": 5,
+      "tag": "A",
+      "text": "Metricas",
+      "href": "https://app.producteca.com/dashboards",
+      "rect": {
+        "x": 558.515625,
+        "y": -1,
+        "w": 67.0625,
+        "h": 45
+      }
+    },
+    {
+      "idx": 6,
+      "tag": "A",
+      "text": "",
+      "href": "https://producteca.zendesk.com/hc/es-419",
+      "rect": {
+        "x": 976.0546875,
+        "y": -4,
+        "w": 48,
+        "h": 46
+      }
+    },
+    {
+      "idx": 7,
+      "tag": "A",
+      "text": "",
+      "href": "https://app.producteca.com/#",
+      "rect": {
+        "x": 1024.0546875,
+        "y": -4,
+        "w": 63.3125,
+        "h": 46
+      }
+    },
+    {
+      "idx": 8,
+      "tag": "BUTTON",
+      "text": "JOSE LOPEZ Administrador",
+      "href": "",
+      "rect": {
+        "x": 1087.3671875,
+        "y": -4,
+        "w": 168.6328125,
+        "h": 52
+      }
+    },
+    {
+      "idx": 9,
+      "tag": "A",
+      "text": "Productos >",
+      "href": "https://app.producteca.com/undefined",
+      "rect": {
+        "x": 24,
+        "y": 69,
+        "w": 66.984375,
+        "h": 18
+      }
+    },
+    {
+      "idx": 10,
+      "tag": "H3",
+      "text": "Banpresto Sanrio Fluffy Puffy My Melody & Kuromi 69599",
+      "href": "",
+      "rect": {
+        "x": 110,
+        "y": 103,
+        "w": 533.2734375,
+        "h": 30
+      }
+    },
+    {
+      "idx": 11,
+      "tag": "BUTTON",
+      "text": "Historial de cambios",
+      "href": "",
+      "rect": {
+        "x": 129,
+        "y": 139,
+        "w": 113.875,
+        "h": 16
+      }
+    },
+    {
+      "idx": 12,
+      "tag": "H2",
+      "text": "Datos generales",
+      "href": "",
+      "rect": {
+        "x": 30,
+        "y": 230,
+        "w": 1220,
+        "h": 28.796875
+      }
+    },
+    {
+      "idx": 13,
+      "tag": "LABEL",
+      "text": "Nombre",
+      "href": "",
+      "rect": {
+        "x": 87.2421875,
+        "y": 287.796875,
+        "w": 69.0078125,
+        "h": 20
+      }
+    },
+    {
+      "idx": 14,
+      "tag": "LABEL",
+      "text": "SKU",
+      "href": "",
+      "rect": {
+        "x": 115.1953125,
+        "y": 334.796875,
+        "w": 41.0546875,
+        "h": 20
+      }
+    },
+    {
+      "idx": 15,
+      "tag": "LABEL",
+      "text": "Marca",
+      "href": "",
+      "rect": {
+        "x": 98.359375,
+        "y": 381.796875,
+        "w": 57.890625,
+        "h": 20
+      }
+    },
+    {
+      "idx": 16,
+      "tag": "LABEL",
+      "text": "Tag principal",
+      "href": "",
+      "rect": {
+        "x": 53.9375,
+        "y": 428.796875,
+        "w": 102.3125,
+        "h": 20
+      }
+    },
+    {
+      "idx": 17,
+      "tag": "LABEL",
+      "text": "Tags secundarios",
+      "href": "",
+      "rect": {
+        "x": 30,
+        "y": 474.796875,
+        "w": 126.25,
+        "h": 40
+      }
+    },
+    {
+      "idx": 18,
+      "tag": "LABEL",
+      "text": "Dimensiones",
+      "href": "",
+      "rect": {
+        "x": 55.5625,
+        "y": 539.796875,
+        "w": 100.6875,
+        "h": 20
+      }
+    },
+    {
+      "idx": 19,
+      "tag": "A",
+      "text": "Editar Dimensiones",
+      "href": "",
+      "rect": {
+        "x": 401.90625,
+        "y": 543.046875,
+        "w": 105.03125,
+        "h": 16.5
+      }
+    },
+    {
+      "idx": 20,
+      "tag": "LABEL",
+      "text": "EAN / UPC",
+      "href": "",
+      "rect": {
+        "x": 74.8046875,
+        "y": 585.796875,
+        "w": 81.4453125,
+        "h": 20
+      }
+    },
+    {
+      "idx": 21,
+      "tag": "LABEL",
+      "text": "Código de artículo",
+      "href": "",
+      "rect": {
+        "x": 30,
+        "y": 631.796875,
+        "w": 126.25,
+        "h": 40
+      }
+    },
+    {
+      "idx": 22,
+      "tag": "LABEL",
+      "text": "Número de parte",
+      "href": "",
+      "rect": {
+        "x": 30,
+        "y": 696.796875,
+        "w": 126.25,
+        "h": 40
+      }
+    },
+    {
+      "idx": 23,
+      "tag": "LABEL",
+      "text": "Combo",
+      "href": "",
+      "rect": {
+        "x": 91.2890625,
+        "y": 761.796875,
+        "w": 64.9609375,
+        "h": 20
+      }
+    },
+    {
+      "idx": 24,
+      "tag": "BUTTON",
+      "text": "Crear producto combo",
+      "href": "",
+      "rect": {
+        "x": 187.25,
+        "y": 765.296875,
+        "w": 127.0546875,
+        "h": 16
+      }
+    },
+    {
+      "idx": 25,
+      "tag": "LABEL",
+      "text": "Notas",
+      "href": "",
+      "rect": {
+        "x": 726.984375,
+        "y": 297.296875,
+        "w": 54.265625,
+        "h": 20
+      }
+    },
+    {
+      "idx": 26,
+      "tag": "LABEL",
+      "text": "Atributos",
+      "href": "",
+      "rect": {
+        "x": 655,
+        "y": 848.796875,
+        "w": 75.6484375,
+        "h": 20
+      }
+    },
+    {
+      "idx": 27,
+      "tag": "A",
+      "text": "Editar Atributos",
+      "href": "",
+      "rect": {
+        "x": 826.25,
+        "y": 1347.296875,
+        "w": 83.7578125,
+        "h": 16.5
+      }
+    },
+    {
+      "idx": 28,
+      "tag": "H2",
+      "text": "Precios",
+      "href": "",
+      "rect": {
+        "x": 30,
+        "y": 1477.796875,
+        "w": 1220,
+        "h": 28.796875
+      }
+    },
+    {
+      "idx": 29,
+      "tag": "LABEL",
+      "text": "Lista Default",
+      "href": "",
+      "rect": {
+        "x": 60,
+        "y": 1770.84375,
+        "w": 118.75,
+        "h": 20
+      }
+    },
+    {
+      "idx": 30,
+      "tag": "BUTTON",
+      "text": "$",
+      "href": "",
+      "rect": {
+        "x": 209.75,
+        "y": 1531.59375,
+        "w": 32.5234375,
+        "h": 31
+      }
+    },
+    {
+      "idx": 31,
+      "tag": "A",
+      "text": "+ Agregar oferta en campaña",
+      "href": "",
+      "rect": {
+        "x": 209.75,
+        "y": 1571.09375,
+        "w": 165.6875,
+        "h": 15.5
+      }
+    },
+    {
+      "idx": 32,
+      "tag": "LABEL",
+      "text": "MUNDIAL 2026 ETAPA 2",
+      "href": "",
+      "rect": {
+        "x": 274.75,
+        "y": 1642.84375,
+        "w": 121.75,
+        "h": 16.5
+      }
+    },
+    {
+      "idx": 33,
+      "tag": "LABEL",
+      "text": "JULIO",
+      "href": "",
+      "rect": {
+        "x": 274.75,
+        "y": 1788.84375,
+        "w": 29.359375,
+        "h": 16.5
+      }
+    },
+    {
+      "idx": 34,
+      "tag": "LABEL",
+      "text": "Hace crecer tus ventas Junio",
+      "href": "",
+      "rect": {
+        "x": 274.75,
+        "y": 1934.84375,
+        "w": 159.1484375,
+        "h": 16.5
+      }
+    },
+    {
+      "idx": 35,
+      "tag": "LABEL",
+      "text": "Lista Shopify B2B",
+      "href": "",
+      "rect": {
+        "x": 60,
+        "y": 2063.34375,
+        "w": 118.75,
+        "h": 40
+      }
+    },
+    {
+      "idx": 36,
+      "tag": "BUTTON",
+      "text": "$",
+      "href": "",
+      "rect": {
+        "x": 209.75,
+        "y": 2057.09375,
+        "w": 32.5234375,
+        "h": 31
+      }
+    },
+    {
+      "idx": 37,
+      "tag": "A",
+      "text": "+ Agregar oferta en campaña",
+      "href": "",
+      "rect": {
+        "x": 209.75,
+        "y": 2096.59375,
+        "w": 165.6875,
+        "h": 15.5
+      }
+    },
+    {
+      "idx": 38,
+      "tag": "LABEL",
+      "text": "Costo",
+      "href": "",
+      "rect": {
+        "x": 60,
+        "y": 2140.59375,
+        "w": 118.75,
+        "h": 20
+      }
+    },
+    {
+      "idx": 39,
+      "tag": "H2",
+      "text": "Variantes Puede revisar nuestros instructivos sobre crear o eliminar en caso de que se encuentre con inconvenientes.",
+      "href": "",
+      "rect": {
+        "x": 30,
+        "y": 2282.59375,
+        "w": 1220,
+        "h": 24
+      }
+    },
+    {
+      "idx": 40,
+      "tag": "A",
+      "text": "crear",
+      "href": "https://producteca.zendesk.com/hc/es-419/articles/4410860279181-Crea-variantes",
+      "rect": {
+        "x": 329.3046875,
+        "y": 2280.5390625,
+        "w": 0,
+        "h": 16.5
+      }
+    },
+    {
+      "idx": 41,
+      "tag": "A",
+      "text": "eliminar",
+      "href": "https://producteca.zendesk.com/hc/es-419/articles/20325633337485-Elimina-variantes",
+      "rect": {
+        "x": 329.3046875,
+        "y": 2280.5390625,
+        "w": 0,
+        "h": 16.5
+      }
+    },
+    {
+      "idx": 42,
+      "tag": "BUTTON",
+      "text": "+ Agregar atributo de variación",
+      "href": "",
+      "rect": {
+        "x": 30,
+        "y": 2351.59375,
+        "w": 205.125,
+        "h": 32
+      }
+    },
+    {
+      "idx": 43,
+      "tag": "H2",
+      "text": "Stocks",
+      "href": "",
+      "rect": {
+        "x": 30,
+        "y": 2514.59375,
+        "w": 392,
+        "h": 28.796875
+      }
+    },
+    {
+      "idx": 44,
+      "tag": "H2",
+      "text": "Stock de seguridad",
+      "href": "",
+      "rect": {
+        "x": 446,
+        "y": 2514.59375,
+        "w": 229.5390625,
+        "h": 28.796875
+      }
+    },
+    {
+      "idx": 45,
+      "tag": "LABEL",
+      "text": "Todas el mismo",
+      "href": "",
+      "rect": {
+        "x": 476,
+        "y": 2620.890625,
+        "w": 87.15625,
+        "h": 23
+      }
+    },
+    {
+      "idx": 46,
+      "tag": "LABEL",
+      "text": "Una a una",
+      "href": "",
+      "rect": {
+        "x": 476,
+        "y": 2643.890625,
+        "w": 56.734375,
+        "h": 23
+      }
+    },
+    {
+      "idx": 47,
+      "tag": "BUTTON",
+      "text": "+ Nueva variante",
+      "href": "",
+      "rect": {
+        "x": 30,
+        "y": 2810.390625,
+        "w": 118.890625,
+        "h": 32
+      }
+    },
+    {
+      "idx": 48,
+      "tag": "A",
+      "text": "Banpresto Sanrio Fluffy Puffy My Melody & Kuromi 69599",
+      "href": "https://articulo.mercadolibre.com.ar/MLA-1845602273-banpresto-sanrio-fluffy-puffy-my-melody-kuromi-69599-_JM",
+      "rect": {
+        "x": 130.7734375,
+        "y": 3417.890625,
+        "w": 229.8828125,
+        "h": 18
+      }
+    },
+    {
+      "idx": 50,
+      "tag": "A",
+      "text": "Ver detalle",
+      "href": "",
+      "rect": {
+        "x": 335.046875,
+        "y": 3492.390625,
+        "w": 64.609375,
+        "h": 18
+      }
+    },
+    {
+      "idx": 51,
+      "tag": "BUTTON",
+      "text": "Asignar",
+      "href": "",
+      "rect": {
+        "x": 337.9765625,
+        "y": 3582.390625,
+        "w": 77.6875,
+        "h": 36
+      }
+    },
+    {
+      "idx": 52,
+      "tag": "LABEL",
+      "text": "Opciones de financiación *",
+      "href": "",
+      "rect": {
+        "x": 51,
+        "y": 3704.390625,
+        "w": 157.328125,
+        "h": 18
+      }
+    },
+    {
+      "idx": 53,
+      "tag": "LABEL",
+      "text": "Plantilla de descripción",
+      "href": "",
+      "rect": {
+        "x": 51,
+        "y": 3783.390625,
+        "w": 157.328125,
+        "h": 20
+      }
+    },
+    {
+      "idx": 54,
+      "tag": "LABEL",
+      "text": "Plantilla de fotos",
+      "href": "",
+      "rect": {
+        "x": 51,
+        "y": 3863.390625,
+        "w": 157.328125,
+        "h": 20
+      }
+    },
+    {
+      "idx": 55,
+      "tag": "LABEL",
+      "text": "Tipo de envio",
+      "href": "",
+      "rect": {
+        "x": 238.328125,
+        "y": 3702.390625,
+        "w": 157.328125,
+        "h": 20
+      }
+    },
+    {
+      "idx": 56,
+      "tag": "LABEL",
+      "text": "Envio gratis",
+      "href": "",
+      "rect": {
+        "x": 258.328125,
+        "y": 3779.390625,
+        "w": 137.328125,
+        "h": 20
+      }
+    },
+    {
+      "idx": 57,
+      "tag": "LABEL",
+      "text": "Retiro en local",
+      "href": "",
+      "rect": {
+        "x": 258.328125,
+        "y": 3809.390625,
+        "w": 137.328125,
+        "h": 20
+      }
+    },
+    {
+      "idx": 58,
+      "tag": "LABEL",
+      "text": "Sincronizar stocks",
+      "href": "",
+      "rect": {
+        "x": 238.328125,
+        "y": 3848.390625,
+        "w": 142.328125,
+        "h": 20
+      }
+    },
+    {
+      "idx": 59,
+      "tag": "LABEL",
+      "text": "Sí",
+      "href": "",
+      "rect": {
+        "x": 269.328125,
+        "y": 3888.890625,
+        "w": 16.6171875,
+        "h": 13
+      }
+    },
+    {
+      "idx": 60,
+      "tag": "LABEL",
+      "text": "No",
+      "href": "",
+      "rect": {
+        "x": 344.328125,
+        "y": 3888.890625,
+        "w": 22.9375,
+        "h": 13
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "idx": 0,
+      "accept": "image/*,.jpeg,.png",
+      "name": "",
+      "id": "",
+      "cls": "",
+      "rect": {
+        "x": 1018,
+        "y": 2990.390625,
+        "w": 1,
+        "h": 1
+      },
+      "chain": [
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "text": "",
+          "imgs": 0,
+          "buttons": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": "Añadir foto",
+          "imgs": 0,
+          "buttons": []
+        },
+        {
+          "tag": "SECTION",
+          "cls": "",
+          "text": "Añadir foto",
+          "imgs": 0,
+          "buttons": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "picture-uploader _picture-uploader_aexbn_1",
+          "text": "Añadir foto",
+          "imgs": 0,
+          "buttons": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "_picture-list-wrapper_17oc7_1",
+          "text": "Añadir foto",
+          "imgs": 7,
+          "buttons": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "col-md-12",
+          "text": "Añadir foto",
+          "imgs": 7,
+          "buttons": []
+        },
+        {
+          "tag": "DIV",
+          "cls": "row",
+          "text": "Añadir foto",
+          "imgs": 7,
+          "buttons": []
+        },
+        {
+          "tag": "SECTION",
+          "cls": "_pictures_1u0d1_1",
+          "text": "Fotos Añadir foto",
+          "imgs": 7,
+          "buttons": []
+        }
+      ]
+    }
+  ],
+  "imageGroups": [
+    {
+      "idx": 0,
+      "src": "https://http2.mlstatic.com/D_996151-MLA113468128013_062026-O.webp",
+      "naturalWidth": 373,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 25,
+        "y": 96,
+        "w": 68,
+        "h": 68
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "image-module_image_y02P7",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "image-module_image-container_ZhlhW image-module_show-border_LV5sz",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "headerSection-module_header-section_UIh2F",
+          "text": "Banpresto Sanrio Fluffy Puffy My Melody & Kuromi 69599 Historial de cambios"
+        },
+        {
+          "tag": "DIV",
+          "cls": "headerSection-module_header-section-container_M-ZSv",
+          "text": "Productos > Banpresto Sanrio Fluffy Puffy My Melody & Kuromi 69599 Historial de cambios"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_product-detail_kzxez_102",
+          "text": "Productos > Banpresto Sanrio Fluffy Puffy My Melody & Kuromi 69599 Historial de cambios Datos generales Nombre SKU Marca Tag principal Tags secundarios Dimensiones 21cm x 35cm x 28cm - 1000gr (1 p.) Editar Dimensiones EAN / UPC Código de artículo Número de parte Combo Crear producto combo Notas Atributos Marca Bandai Fabricante Bandai Línea Fluffy Puffy Colección Sanrio characters Edad mínima recomendada 6 años Altura N/A Profundidad N/A Ancho N/A Materiales PVC y felpa Tipo de alimentación N/A Es articulada No Es bobblehead No Con control remoto No Número de la figura de acción N/A Incluye accesorios No Es coleccionable Sí Número de certificado de seguridad del juguete N/A Peso N/A Con luces No Con sonido No Con piezas intercambiables No Tamaño de la pila Escala N/A Cantidad de puntos de articulación N/A Tipo de juego N/A Voltaje de la batería Personaje filtrable Otro Condición del ítem Nuevo Orígen del dato del paquete de fábrica SELLER Altura del paquete 15 cm Largo del paquete 5 cm"
+        },
+        {
+          "tag": "DIV",
+          "cls": "container-fluid",
+          "text": "Productos > Banpresto Sanrio Fluffy Puffy My Melody & Kuromi 69599 Historial de cambios Datos generales Nombre SKU Marca Tag principal Tags secundarios Dimensiones 21cm x 35cm x 28cm - 1000gr (1 p.) Editar Dimensiones EAN / UPC Código de artículo Número de parte Combo Crear producto combo Notas Atributos Marca Bandai Fabricante Bandai Línea Fluffy Puffy Colección Sanrio characters Edad mínima recomendada 6 años Altura N/A Profundidad N/A Ancho N/A Materiales PVC y felpa Tipo de alimentación N/A Es articulada No Es bobblehead No Con control remoto No Número de la figura de acción N/A Incluye accesorios No Es coleccionable Sí Número de certificado de seguridad del juguete N/A Peso N/A Con luces No Con sonido No Con piezas intercambiables No Tamaño de la pila Escala N/A Cantidad de puntos de articulación N/A Tipo de juego N/A Voltaje de la batería Personaje filtrable Otro Condición del ítem Nuevo Orígen del dato del paquete de fábrica SELLER Altura del paquete 15 cm Largo del paquete 5 cm"
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "src": "https://imagesproducteca.blob.core.windows.net/producteca/iso-mercadolibre.png",
+      "naturalWidth": 201,
+      "naturalHeight": 139,
+      "rect": {
+        "x": 226.75,
+        "y": 1665.03125,
+        "w": 32,
+        "h": 22.125
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "_deal-icon_h7rei_57",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "deal-container _deal-container_h7rei_63 _closed-container_h7rei_80",
+          "text": "MUNDIAL 2026 ETAPA 2 Tipo: Tradicional Del 01/05/26 al 27/07/26 Aprobadas: 1"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_deal-card_h7rei_49 _variation-price-list_h7rei_60",
+          "text": "MUNDIAL 2026 ETAPA 2 Tipo: Tradicional Del 01/05/26 al 27/07/26 Aprobadas: 1"
+        },
+        {
+          "tag": "DIV",
+          "cls": "deal-list price-field-container",
+          "text": "MUNDIAL 2026 ETAPA 2 Tipo: Tradicional Del 01/05/26 al 27/07/26 Aprobadas: 1"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_deals-per-price-container_h7rei_45",
+          "text": "MUNDIAL 2026 ETAPA 2 Tipo: Tradicional Del 01/05/26 al 27/07/26 Aprobadas: 1 JULIO Tipo: De vendedor flexible Del 16/06/26 al 16/07/26 Pendientes: 1 Hace crecer tus ventas Junio Tipo: Smart Del 07/06/26 al 30/06/26 No aplicadas: 1"
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "src": "https://imagesproducteca.blob.core.windows.net/producteca/iso-mercadolibre.png",
+      "naturalWidth": 201,
+      "naturalHeight": 139,
+      "rect": {
+        "x": 226.75,
+        "y": 1811.03125,
+        "w": 32,
+        "h": 22.125
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "_deal-icon_h7rei_57",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "deal-container _deal-container_h7rei_63 _closed-container_h7rei_80",
+          "text": "JULIO Tipo: De vendedor flexible Del 16/06/26 al 16/07/26 Pendientes: 1"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_deal-card_h7rei_49 _variation-price-list_h7rei_60",
+          "text": "JULIO Tipo: De vendedor flexible Del 16/06/26 al 16/07/26 Pendientes: 1"
+        },
+        {
+          "tag": "DIV",
+          "cls": "deal-list price-field-container",
+          "text": "JULIO Tipo: De vendedor flexible Del 16/06/26 al 16/07/26 Pendientes: 1"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_deals-per-price-container_h7rei_45",
+          "text": "MUNDIAL 2026 ETAPA 2 Tipo: Tradicional Del 01/05/26 al 27/07/26 Aprobadas: 1 JULIO Tipo: De vendedor flexible Del 16/06/26 al 16/07/26 Pendientes: 1 Hace crecer tus ventas Junio Tipo: Smart Del 07/06/26 al 30/06/26 No aplicadas: 1"
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "src": "https://imagesproducteca.blob.core.windows.net/producteca/iso-mercadolibre.png",
+      "naturalWidth": 201,
+      "naturalHeight": 139,
+      "rect": {
+        "x": 226.75,
+        "y": 1957.03125,
+        "w": 32,
+        "h": 22.125
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "_deal-icon_h7rei_57",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "deal-container _deal-container_h7rei_63 _closed-container_h7rei_80",
+          "text": "Hace crecer tus ventas Junio Tipo: Smart Del 07/06/26 al 30/06/26 No aplicadas: 1"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_deal-card_h7rei_49 _variation-price-list_h7rei_60",
+          "text": "Hace crecer tus ventas Junio Tipo: Smart Del 07/06/26 al 30/06/26 No aplicadas: 1"
+        },
+        {
+          "tag": "DIV",
+          "cls": "deal-list price-field-container",
+          "text": "Hace crecer tus ventas Junio Tipo: Smart Del 07/06/26 al 30/06/26 No aplicadas: 1"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_deals-per-price-container_h7rei_45",
+          "text": "MUNDIAL 2026 ETAPA 2 Tipo: Tradicional Del 01/05/26 al 27/07/26 Aprobadas: 1 JULIO Tipo: De vendedor flexible Del 16/06/26 al 16/07/26 Pendientes: 1 Hace crecer tus ventas Junio Tipo: Smart Del 07/06/26 al 30/06/26 No aplicadas: 1"
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "src": "https://imagesproducteca.blob.core.windows.net/producteca/iso-mercadolibre.png",
+      "naturalWidth": 201,
+      "naturalHeight": 139,
+      "rect": {
+        "x": 497.1484375,
+        "y": 2579.890625,
+        "w": 34.703125,
+        "h": 23.9921875
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "_column_1le7f_50",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "_header_1le7f_10",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "_table_1le7f_1 _safety-stock-table_1le7f_42",
+          "text": "Todas el mismo Una a una"
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": "Stock de seguridad Todas el mismo Una a una"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_stock-table-container_1le7f_268",
+          "text": "Stocks SKU Disponible / Stock Todos los depósitos Barrio Chino Bella Vista Default Local Caseros MercadoEnvios Full Piba Suc. Atico Suc. Avellaneda Suc. Canning Suc. Castelar Suc. Fco Alvarez Suc. Hurlingham Suc. Laferrere Suc. Lujan Suc. Parque Leloir Suc. Plaza Suc. Ramos Mejía Suc. San Justo Suc. Soler Suc. TOM Con stock (1) /40 Sin stock (0) Stock de seguridad Todas el mismo Una a una"
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_996151-MLA113468128013_062026-O.webp",
+      "naturalWidth": 373,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 50.609375,
+        "y": 2995.390625,
+        "w": 85.7890625,
+        "h": 114.9921875
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "photo _photo_aexbn_15",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "picture-uploader _picture-uploader_aexbn_1",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list-item",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "idx": 6,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_957914-MLA112313105366_062026-O.jpg",
+      "naturalWidth": 385,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 190.2265625,
+        "y": 2995.390625,
+        "w": 88.546875,
+        "h": 114.9921875
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "photo _photo_aexbn_15",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "picture-uploader _picture-uploader_aexbn_1",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list-item",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "idx": 7,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_796658-MLA113468246697_062026-O.jpg",
+      "naturalWidth": 384,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 331.34375,
+        "y": 2995.3984375,
+        "w": 88.3125,
+        "h": 114.984375
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "photo _photo_aexbn_15",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "picture-uploader _picture-uploader_aexbn_1",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list-item",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "idx": 8,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_924840-MLA113467476547_062026-O.webp",
+      "naturalWidth": 475,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 461.875,
+        "y": 2995.390625,
+        "w": 109.25,
+        "h": 115
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "photo _photo_aexbn_15",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "picture-uploader _picture-uploader_aexbn_1",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list-item",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "idx": 9,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_935735-MLA113467476549_062026-O.webp",
+      "naturalWidth": 474,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 602.9921875,
+        "y": 2995.390625,
+        "w": 109.015625,
+        "h": 114.9921875
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "photo _photo_aexbn_15",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "picture-uploader _picture-uploader_aexbn_1",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list-item",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "idx": 10,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_752654-MLA113466286267_062026-O.jpg",
+      "naturalWidth": 464,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 745.140625,
+        "y": 2995.390625,
+        "w": 106.71875,
+        "h": 114.9921875
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "photo _photo_aexbn_15",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "picture-uploader _picture-uploader_aexbn_1",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list-item",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "idx": 11,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_819937-MLA112313580072_062026-O.jpg",
+      "naturalWidth": 480,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 884.3046875,
+        "y": 2995.390625,
+        "w": 110.3984375,
+        "h": 114.9921875
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "photo _photo_aexbn_15",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "picture-uploader _picture-uploader_aexbn_1",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list-item",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "list",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "idx": 12,
+      "src": "https://imagesproducteca.blob.core.windows.net/producteca/iso-mercadolibre.png",
+      "naturalWidth": 201,
+      "naturalHeight": 139,
+      "rect": {
+        "x": 47,
+        "y": 3309.7890625,
+        "w": 35,
+        "h": 24.203125
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": "Mercadolibre"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_title-container_usteu_16",
+          "text": "Mercadolibre"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_header_usteu_9 row",
+          "text": "Mercadolibre"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_container_usteu_1 col-md-12",
+          "text": "Mercadolibre Listado General Banpresto Sanrio Fluffy Puffy My Melody & Kuromi 69599 Activa: 1 Ver detalle Catálogo No tiene un producto asignado Asignar Configuración Opciones de financiación * 1 Seleccionado Plantilla de descripción Sin plantilla Retiro en Sucursal Sucursales Kinderland Plantilla de fotos Sin plantilla Tipo de envio Sin especificar MercadoEnvios 1 MercadoEnvios 2 MercadoEnvios Flex Los tipos de envíos deshabilitados no se pueden seleccionar por no estar disponibles en Mercado Libre Envio gratis Retiro en local Sincronizar stocks Sí No"
+        },
+        {
+          "tag": "DIV",
+          "cls": "_integration-column_kzxez_69",
+          "text": "Mercadolibre Listado General Banpresto Sanrio Fluffy Puffy My Melody & Kuromi 69599 Activa: 1 Ver detalle Catálogo No tiene un producto asignado Asignar Configuración Opciones de financiación * 1 Seleccionado Plantilla de descripción Sin plantilla Retiro en Sucursal Sucursales Kinderland Plantilla de fotos Sin plantilla Tipo de envio Sin especificar MercadoEnvios 1 MercadoEnvios 2 MercadoEnvios Flex Los tipos de envíos deshabilitados no se pueden seleccionar por no estar disponibles en Mercado Libre Envio gratis Retiro en local Sincronizar stocks Sí No"
+        }
+      ]
+    },
+    {
+      "idx": 13,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_996151-MLA113468128013_062026-O.webp",
+      "naturalWidth": 373,
+      "naturalHeight": 500,
+      "rect": {
+        "x": 46.890625,
+        "y": 3424.890625,
+        "w": 43,
+        "h": 48
+      },
+      "ancestors": [
+        {
+          "tag": "IMG",
+          "cls": "image-module_image_y02P7",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "image-module_image-container_ZhlhW image-module_show-border_LV5sz",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "product-thumbnail _product-thumbnail_a0fi4_1",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "_thumbnail-container_usteu_98",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "_thumbnail-col_usteu_89 col-2",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "cls": "_info_usteu_40 row",
+          "text": "Banpresto Sanrio Fluffy Puffy My Melody & Kuromi 69599 Activa: 1 Ver detalle"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "countText": "Fotos\n\nAñadir foto",
+  "imgs": [
+    {
+      "idx": 0,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_996151-MLA113468128013_062026-O.webp",
+      "naturalWidth": 373,
+      "naturalHeight": 500,
+      "width": 86,
+      "height": 115,
+      "alt": ""
+    },
+    {
+      "idx": 1,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_957914-MLA112313105366_062026-O.jpg",
+      "naturalWidth": 385,
+      "naturalHeight": 500,
+      "width": 89,
+      "height": 115,
+      "alt": ""
+    },
+    {
+      "idx": 2,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_796658-MLA113468246697_062026-O.jpg",
+      "naturalWidth": 384,
+      "naturalHeight": 500,
+      "width": 88,
+      "height": 115,
+      "alt": ""
+    },
+    {
+      "idx": 3,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_924840-MLA113467476547_062026-O.webp",
+      "naturalWidth": 475,
+      "naturalHeight": 500,
+      "width": 109,
+      "height": 115,
+      "alt": ""
+    },
+    {
+      "idx": 4,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_935735-MLA113467476549_062026-O.webp",
+      "naturalWidth": 474,
+      "naturalHeight": 500,
+      "width": 109,
+      "height": 115,
+      "alt": ""
+    },
+    {
+      "idx": 5,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_752654-MLA113466286267_062026-O.jpg",
+      "naturalWidth": 464,
+      "naturalHeight": 500,
+      "width": 107,
+      "height": 115,
+      "alt": ""
+    },
+    {
+      "idx": 6,
+      "src": "https://images.weserv.nl/?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_819937-MLA112313580072_062026-O.jpg",
+      "naturalWidth": 480,
+      "naturalHeight": 500,
+      "width": 110,
+      "height": 115,
+      "alt": ""
+    }
+  ],
+  "styles": []
+}
